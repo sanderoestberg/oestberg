@@ -26,9 +26,11 @@ export default class SpaService {
   setActiveTab(pageId) {
     for (let navItem of this.navItems) {
       if (`#${pageId}` === navItem.getAttribute("href")) {
-        navItem.classList.add("highlighted");
+        //navItem.classList.add("highlighted");
+        console.log("yay")
       } else {
-        navItem.classList.remove("highlighted");
+        //navItem.classList.remove("highlighted");
+        console.log("no :(")
       }
     }
   }

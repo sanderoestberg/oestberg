@@ -24,13 +24,13 @@ html {
   /* padding equals height of tabbar and topbar */
   padding: 65px 0; }
 
-/* line 52, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 53, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 .highlighted {
   color: #000000ff;
   font-weight: 800;
   border-bottom: 3px solid #dbbb53ff; }
 
-/* line 59, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 60, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 header {
   width: 100%;
   position: fixed;
@@ -40,7 +40,7 @@ header {
   justify-content: space-between;
   height: 6vh;
   background-color: #fafafaff; }
-  /* line 68, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 69, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   header p {
     margin-left: 100px;
     text-transform: uppercase;
@@ -48,13 +48,13 @@ header {
     font-size: 2em;
     color: #484848ff;
     line-height: 100%; }
-    /* line 75, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+    /* line 76, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
     header p span {
       font-size: 1.2em; }
-  /* line 80, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 81, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   header .space-around {
     margin: 0px 15px; }
-  /* line 86, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 87, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   header ul {
     display: flex;
     /* width: 40%;
@@ -65,25 +65,25 @@ header {
     font-size: 1.2em;
     font-weight: 600;
     text-transform: uppercase; }
-    /* line 97, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+    /* line 98, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
     header ul a {
       text-decoration: none;
       color: #484848ff; }
 
-/* line 107, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 108, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 #forside {
   width: 100%;
   height: 100vh;
   overflow-y: hidden; }
 
-/* line 113, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 114, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 #silhuet {
   width: 35%;
   transform: rotate(-50deg);
   position: absolute;
   right: 0px; }
 
-/* line 120, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 121, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 #texture {
   width: 1000px;
   -webkit-mask-image: url(../images/silhuet-form.svg);
