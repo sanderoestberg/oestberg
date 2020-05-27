@@ -7,7 +7,21 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
-<body>
-<header><h1><span>Ø</span>stberg<span>D</span>esign</div></h1></header>
+<body onhashchange="pageChange()">
+<header><p><span>Ø</span>stberg <span>D</span>esign</p>
+<ul class="navbar">
+    <a href="#forside" class="highlighted"><li>Forside</li></a>
+    <li class="space-around">|</li>
+    <a href="#smykker"><li>Smykker</li></a>
+    <li class="space-around">|</li>
+    <a href="#metteoestberg"><li>Mette Østberg</li></a>
+    <li class="space-around">|</li>
+    <a href="#kontakt"><li>Kontakt</li></a>
+</ul>
+</header>
+<section class="page" id="forside">
+ <img id="silhuet" src="images/silhuet.png" alt="">
+</section>
+<script src="js/main.js" type="module"></script>
 </body>
 </html>
