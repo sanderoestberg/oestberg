@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../scss/style.scss"
+	],
+	"sourcesContent": [
+		"*{\r\n    font-family: sweet-sans-pro, sans-serif;\r\n    \r\n}"
+	],
+	"names": [],
+	"mappings": ";AAAA,AAAA,CAAC,CAAA;EACG,WAAW,EAAE,0BAA0B,GAE1C"
+}
