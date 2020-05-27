@@ -5,8 +5,8 @@
 		"../scss/style.scss"
 	],
 	"sourcesContent": [
-		"*{\r\n    font-family: sweet-sans-pro, sans-serif;\r\n    \r\n}"
+		"\r\n\r\n/*---------------Inheritances-------------*/\r\n\r\n$background-color: #fafafaff;\r\n$footer: #ecececff;\r\n$text-color: #484848ff;\r\n$highlight: #000000ff;\r\n$gold: #dbbb53ff;\r\n\r\n\r\n%center {\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n  }\r\n\r\n%shadow {\r\n    -webkit-box-shadow: 0px 3px 6px 0 rgba(0, 0, 0, 0.16);\r\n    -moz-box-shadow: 0px 3px 6px 0 rgba(0, 0, 0, 0.16);\r\n    box-shadow: 0px 3px 6px 0 rgba(0, 0, 0, 0.16);\r\n  }\r\n  \r\n/////////////////////////////////////////////\r\n\r\n*{\r\n    padding: 0;\r\n    margin: 0;\r\n}\r\n\r\nbody {\r\n    overflow-x: hidden;\r\n    background-color: $background-color;\r\n  }\r\n\r\nhtml{\r\n    font-family: sweet-sans-pro, sans-serif;\r\n}"
 	],
 	"names": [],
-	"mappings": ";AAAA,AAAA,CAAC,CAAA;EACG,WAAW,EAAE,0BAA0B,GAE1C"
+	"mappings": "AAEA,4CAA4C;;AAuB5C,AAAA,CAAC,CAAA;EACG,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC,GACZ;;;AAED,AAAA,IAAI,CAAC;EACD,UAAU,EAAE,MAAM;EAClB,gBAAgB,EA5BD,SAAS,GA6BzB;;;AAEH,AAAA,IAAI,CAAA;EACA,WAAW,EAAE,0BAA0B,GAC1C"
 }
