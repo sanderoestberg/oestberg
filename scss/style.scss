@@ -92,6 +92,61 @@ html{
     transition: visibility 0s 0.4s, opacity 0.4s linear;
   }
 
+
+/* SmykkeMainPage */
+
+.smykkerouterbox{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+.leftsmykkebox, .rightsmykkebox{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 40px 5%;
+
+}
+
+.leftsmykkebox{
+    margin-top: 80px;
+}
+
+.smykkeimgsmall, .smykkeimgbig{
+display: flex;
+justify-content: center;
+margin: 40px 0;
+}
+.smykkeimgsmall img{
+    width: 40%;
+}
+
+.smykkeimgbig img{
+    width: 80%;
+}
+
+.smykkemenu{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 20%;
+    
+    background-image: url(../images/smykkemenu.png);
+    background-repeat: no-repeat;
+
+    h4{
+        font-size: 23px;
+    }
+    ul{
+        cursor: pointer;
+        list-style: none;
+        line-height: 1.6;
+        font-size: 20px;
+    }
+}
 /* smykkegalleri */
 
 .overview-grid-container{
