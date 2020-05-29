@@ -210,12 +210,10 @@ text-align: center;
 /* SPA INDSTILLINGER */
 .page {
     display: none;
-    /*min heigh is screen heigh minus height of tab and top bar */
-    min-height: calc(100vh - 128px);
+    min-height: 100vh;
     animation: fadeIn 0.4s;
-    /* padding equals height of tabbar and topbar */
-    padding: 65px 0;
   }
+
 
 .highlighted{
     color: $highlight;
@@ -233,6 +231,7 @@ header{
     justify-content: space-between;
     height: 6vh;
     background-color: $background-color;
+    z-index: 100;
     p{
         margin-left: 100px;
         text-transform: uppercase;
@@ -275,14 +274,58 @@ header{
 #forside{
     width: 100%;
     height: 100vh;
-    overflow-y: hidden;
+    position: fixed;
 }
 
+.forside-grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100vh;
+    align-items: center;
+    justify-items: flex-end;
+}
+
+.first-title{
+margin-left: 20px;
+}
+.name-display{
+    text-align: center;
+    p{
+        font-size: 1.7em;
+            span{
+                font-size: 2.3em;
+                font-weight: 600;
+                color: $text-color;
+                line-height: 100%;
+            }
+    }
+}
+
+#title-output{
+    margin-top: 15px;
+    animation: pulse 3s infinite;
+    
+}
+
+
+@keyframes pulse {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+  }
+
 #silhuet{
-width: 35%;
-transform: rotate(-50deg);
+width: 40%;
+transform: rotate(-45deg);
 position: absolute;
-right: 0px;
+right: -100px;
+opacity: 0.8;
 }
 
 #texture{
