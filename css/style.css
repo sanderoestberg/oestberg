@@ -128,19 +128,16 @@ html {
 /* line 156, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 .page {
   display: none;
-  /*min heigh is screen heigh minus height of tab and top bar */
-  min-height: calc(100vh - 128px);
-  animation: fadeIn 0.4s;
-  /* padding equals height of tabbar and topbar */
-  padding: 65px 0; }
+  min-height: 100vh;
+  animation: fadeIn 0.4s; }
 
-/* line 166, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 163, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 .highlighted {
   color: #000000ff;
   font-weight: 800;
   border-bottom: 3px solid #dbbb53ff; }
 
-/* line 173, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 170, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 header {
   width: 100%;
   position: fixed;
@@ -149,8 +146,9 @@ header {
   align-items: center;
   justify-content: space-between;
   height: 6vh;
-  background-color: #fafafaff; }
-  /* line 182, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  background-color: #fafafaff;
+  z-index: 100; }
+  /* line 180, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   header p {
     margin-left: 100px;
     text-transform: uppercase;
@@ -158,13 +156,13 @@ header {
     font-size: 2em;
     color: #484848ff;
     line-height: 100%; }
-    /* line 189, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+    /* line 187, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
     header p span {
       font-size: 1.2em; }
-  /* line 194, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 192, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   header .space-around {
     margin: 0px 15px; }
-  /* line 200, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 198, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   header ul {
     display: flex;
     /* width: 40%;
@@ -175,25 +173,64 @@ header {
     font-size: 1.2em;
     font-weight: 600;
     text-transform: uppercase; }
-    /* line 211, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+    /* line 209, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
     header ul a {
       text-decoration: none;
       color: #484848ff; }
 
-/* line 221, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 219, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 #forside {
   width: 100%;
   height: 100vh;
-  overflow-y: hidden; }
+  position: fixed; }
 
-/* line 227, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 225, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+.forside-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100vh;
+  align-items: center;
+  justify-items: flex-end; }
+
+/* line 233, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+.first-title {
+  margin-left: 20px; }
+
+/* line 236, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+.name-display {
+  text-align: center; }
+  /* line 238, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  .name-display p {
+    font-size: 1.7em; }
+    /* line 240, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+    .name-display p span {
+      font-size: 2.3em;
+      font-weight: 600;
+      color: #484848ff;
+      line-height: 100%; }
+
+/* line 249, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+#title-output {
+  margin-top: 15px;
+  animation: pulse 3s infinite; }
+
+@keyframes pulse {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+/* line 268, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 #silhuet {
-  width: 35%;
-  transform: rotate(-50deg);
+  width: 40%;
+  transform: rotate(-45deg);
   position: absolute;
-  right: 0px; }
+  right: -100px;
+  opacity: 0.8; }
 
-/* line 234, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 276, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 #texture {
   width: 1000px;
   -webkit-mask-image: url(../images/silhuet-form.svg);

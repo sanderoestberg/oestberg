@@ -22,7 +22,7 @@ export default class SpaService {
     this.setActiveTab(pageId);
   }
 
-  // sets active tabbar/ menu item
+  // adds a class to menu item
   setActiveTab(pageId) {
     for (let navItem of this.navItems) {
       if (`#${pageId}` === navItem.getAttribute("href")) {
