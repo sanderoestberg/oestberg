@@ -20,6 +20,12 @@ $gold: #dbbb53ff;
     -moz-box-shadow: 0px 3px 6px 0 rgba(0, 0, 0, 0.16);
     box-shadow: 0px 3px 6px 0 rgba(0, 0, 0, 0.16);
   }
+
+%footer-shadow {
+    -webkit-box-shadow: 0px -3px 3px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px -3px 3px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px -3px 3px 0px rgba(0,0,0,0.1);
+}
   
 /////////////////////////////////////////////
 
@@ -212,6 +218,10 @@ text-align: center;
     display: none;
     min-height: 100vh;
     animation: fadeIn 0.4s;
+
+    h2{
+        color: $text-color;
+    }
   }
 
 
@@ -303,10 +313,18 @@ margin-left: 20px;
 
 #title-output{
     margin-top: 15px;
-    animation: pulse 3s infinite;
+    animation: pulse 3s infinite
     
 }
 
+.output-animation{
+    margin-top: 15px;
+    animation: pulse 3s infinite
+}
+
+#title-output.enabled{
+    color: red;
+}
 
 @keyframes pulse {
     0% {
@@ -347,11 +365,20 @@ opacity: 0.8;
 
 ///----------------------METTE ØSTBERG-------------------///
 
+#metteoestberg{
+max-width: 1400px;
+margin: auto;
+
+
+}
+
 .mette-outer-grid{
     display: grid;
     margin: 100px 100px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 100px;
 }
+
 
 #title-output-mette{
     margin-top: 10px;
@@ -360,6 +387,7 @@ opacity: 0.8;
 }
 
 .mette-name-display{
+    margin-left: 30px;
     text-align: center;
     p{
         font-size: 1.0em;
@@ -374,4 +402,108 @@ opacity: 0.8;
 
 .foto-title{
     display: flex;
+    align-items: center;
+    height: 30vh;
+    img{
+      width: 140px;  
+    }
+}
+
+#uddannelse{
+    img{
+        width: 100%;
+    }
+}
+
+.mette-promo-smykke{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 30vh;
+}
+
+.form-funktion{
+    img{
+        width: 100%;
+    }
+}
+
+#mette-koncepter{
+    text-align: center;
+}
+
+.mandalacreate, .multicircles{
+    img{
+        width: 80%;
+    }
+    a{
+        text-decoration: none;
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+    a:hover{
+        opacity: 0.5;
+    }
+}
+
+
+.mandalacreate{
+    a{
+        color: #17819f;
+    }
+}
+
+.multicircles{
+    a{
+        color: #8ea717;
+    }
+}
+
+
+
+///----------------------FOOTER-------------------///
+
+footer{
+display: none;
+background-color: $footer;
+z-index: 10;
+@extend %footer-shadow
+}
+
+#footer-grid{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    width: 60%;
+    margin: auto;
+    padding: 2vh 0px;
+        div{
+            display: flex;
+            flex-direction: column;
+        }
+
+        h2{
+            color: $text-color;
+        }
+
+        a{
+            text-decoration: none;
+            color: $text-color;
+        }
+        a:hover{
+            opacity: 0.5;
+        }
+}
+
+#footer-line{
+width: 150px;
+height: 2px;
+margin-top: 7px;
+background-color: $text-color;    
+}
+
+#logo-stempel{
+position: absolute;
+right: 30px;
+margin-top: -50px;
 }

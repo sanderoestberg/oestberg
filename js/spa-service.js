@@ -20,6 +20,13 @@ export default class SpaService {
     this.hideAllPages();
     document.querySelector(`#${pageId}`).style.display = "block";
     this.setActiveTab(pageId);
+    if (pageId !== "forside"){
+    document.querySelector('footer').style.display = "block";
+  }
+    else{
+      document.querySelector('footer').style.display = "none";
+    }
+    
   }
 
   // adds a class to menu item

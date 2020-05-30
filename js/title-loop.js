@@ -47,6 +47,7 @@ export default class TitleLoop {
                 outputMette.innerHTML = titles[i]
             }, i*3000); 
     }
+    
     }
     
 
