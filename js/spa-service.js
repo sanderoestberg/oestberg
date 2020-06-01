@@ -23,8 +23,12 @@ export default class SpaService {
     if (pageId !== "forside"){
     document.querySelector('footer').style.display = "block";
   }
+  if (pageId.includes("smyk")){
+    document.querySelector('.smykkemenu').style.display = "flex";
+  }
     else{
       document.querySelector('footer').style.display = "none";
+      document.querySelector('.smykkemenu').style.display = "none";
     }
     
   }

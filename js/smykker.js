@@ -8,6 +8,77 @@ function showLoader(show) {
   }
   
   
+
+    // fetch all genres / categories from WP
+function getGenres() {
+  fetch('http://oskarwiegaard.dk/wp/wp-json/wp/v2/categories?parent=12')
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(categories) {
+      console.log(categories);
+      appendGenres(categories);
+      showLoader(false);
+    });
+}
+
+getGenres();
+
+// append all genres
+function appendGenres(genres) {
+  let htmlTemplate = "";
+  for (let genre of genres) {
+    htmlTemplate += `
+    <a id="menu-punkter" href="#smykke-oversigt"><li onclick="genreSelected('${genre.id}', this)">- ${genre.name}</li></a>
+    `;
+  }
+
+  document.querySelector('#smykke-menu-items').innerHTML += htmlTemplate;
+}
+
+
+function genreSelected(genreId, element) {
+  let menupunkter = document.querySelector('#menu-punkter')
+  element.classList.add('highlighted');
+  menupunkter.classList.remove('highlighted');
+  
+  
+  console.log(`Genre ID: ${genreId}`);
+  if (genreId) {
+    showLoader(true);
+    fetch(`http://oskarwiegaard.dk/wp/wp-json/wp/v2/posts?_embed&categories=${genreId}`)
+      .then(function(response) {
+        return response.json();
+      })
+      .then(function(smykker) {
+        
+        console.log(smykker);
+        appendSmykkerByGenre(smykker);
+        showLoader(false);
+      });
+  }
+}
+
+
+function appendSmykkerByGenre(smykkerByGenre) {
+  let htmlTemplate = "";
+  let clearGrids = `
+  <div class="clear1"></div>
+  <div class="clear2"></div>
+  <div class="clear3"></div>
+  <div class="clear4"></div>
+  <div class="clear4end"></div>
+  `
+  for (let smykke of smykkerByGenre) {
+    htmlTemplate += `
+    
+    <img src="${smykke.acf.smallimg}" onclick="appendSmykkerBig('${smykke.acf.bigimg}', '${smykke.acf.info}', '${smykke.acf.pris}')">
+    `;
+  }
+
+  document.querySelector('.overview-grid-container').innerHTML = clearGrids + htmlTemplate;
+}
+
   
   let smykker = [];
   // Her opretter vi et tomt array med navnet "smykkes".
@@ -30,7 +101,9 @@ function showLoader(show) {
       });
   }
   
-  getSmykker();
+  // getSmykker();
+  
+  
   
   // Da vores json er fetchet kan vi nu append det til DOM.
   // vi initiere herefter et for-loop hvor vi kører gennem den samme kodeblok igen og igen inditl alle smykkerne er gennemgået.
@@ -71,3 +144,4 @@ function showLoader(show) {
   
   
   }
+  
