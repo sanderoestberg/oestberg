@@ -105,6 +105,7 @@ html{
     display: flex;
     width: 100%;
     flex-direction: row;
+    margin-top: 50px;
 }
 
 .leftsmykkebox, .rightsmykkebox{
@@ -125,11 +126,13 @@ justify-content: center;
 margin: 40px 0;
 }
 .smykkeimgsmall img{
-    width: 40%;
+    width: 20%;
+    height: auto;
+    margin: 0 20px;
 }
 
 .smykkeimgbig img{
-    width: 80%;
+    width: 70%;
 }
 
 .smykkemenu{
@@ -474,7 +477,8 @@ footer{
 display: none;
 background-color: $footer;
 z-index: 10;
-@extend %footer-shadow
+@extend %footer-shadow;
+padding: 2vh 0px;
 }
 
 #footer-grid{
@@ -483,7 +487,7 @@ z-index: 10;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     width: 60%;
     margin: auto;
-    padding: 2vh 0px;
+
         div{
             display: flex;
             flex-direction: column;
@@ -513,4 +517,62 @@ background-color: $text-color;
 position: absolute;
 right: 30px;
 margin-top: -50px;
+}
+
+
+
+/*  Responsiv */
+
+@media screen and (max-width: 770px){
+    .smykkerouterbox{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .leftsmykkebox, .rightsmykkebox{
+        width: 90%;
+        margin: auto;
+    }
+
+    .leftsmykkebox{
+        margin-top: 40px;
+    }
+    .smykkeimgsmall img{
+            width: 30%;
+        }
+    
+    .smykkeimgbig img{
+        width: 80%;
+        margin: 0;
+    }
+    .smykkemenu{
+  display: none;
+    }
+
+
+    #footer-grid{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        grid-row-gap: 5%;
+        text-align: start;
+        width: 80%;
+
+        padding: 30px;
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    #logo-stempel{
+        position: absolute;
+        right: 40%;
+        margin-top: 50px;
+        }
+
+        footer{
+            padding-bottom: 100px;
+        }
 }
