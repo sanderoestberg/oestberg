@@ -289,15 +289,21 @@ header{
 
 .forside-grid{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-template-rows: 100vh;
+    grid-gap: 5%;
     align-items: center;
     justify-items: flex-end;
+     img{
+        width: 100%;
+    }
 }
+
 
 .first-title{
 margin-left: 20px;
 }
+
 .name-display{
     text-align: center;
     p{
@@ -338,19 +344,12 @@ margin-left: 20px;
     }
   }
 
-#silhuet1{
-width: 40%;
-transform: rotate(-45deg);
-position: absolute;
-right: -50px;
-}
 #silhuet2{
-width: 20%;
-transform: rotate(185deg);
+width: 18%;
 position: absolute;
-left: -150px;
-bottom: -400px;
-opacity: 0.8;
+left: 0px;
+bottom: 0px;
+
 }
 
 #texture{
