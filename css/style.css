@@ -327,76 +327,84 @@ header {
   animation: pulse 3s infinite; }
 
 /* line 388, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+#mette-silhuet {
+  position: absolute;
+  transform: rotate(-10deg);
+  width: 30%;
+  z-index: -10;
+  right: 50px; }
+
+/* line 396, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 .mette-name-display {
   margin-left: 30px;
   text-align: center; }
-  /* line 391, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 399, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   .mette-name-display p {
     font-size: 1.0em; }
-    /* line 393, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+    /* line 401, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
     .mette-name-display p span {
       font-size: 2.3em;
       font-weight: 600;
       color: #484848ff;
       line-height: 100%; }
 
-/* line 402, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 410, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 .foto-title {
   display: flex;
   align-items: center;
   height: 30vh; }
-  /* line 406, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 414, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   .foto-title img {
     width: 140px; }
 
-/* line 412, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 420, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 #uddannelse img {
   width: 100%; }
 
-/* line 417, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 425, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 .mette-promo-smykke {
   display: flex;
   justify-content: center;
   align-items: flex-end;
   height: 30vh; }
 
-/* line 425, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 433, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 .form-funktion img {
   width: 100%; }
 
-/* line 430, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 438, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 #mette-koncepter {
   text-align: center; }
 
-/* line 435, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 443, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 .mandalacreate img, .multicircles img {
   width: 80%; }
 
-/* line 438, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 446, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 .mandalacreate a, .multicircles a {
   text-decoration: none;
   font-size: 1.2em;
   font-weight: 600; }
 
-/* line 443, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 451, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 .mandalacreate a:hover, .multicircles a:hover {
   opacity: 0.5; }
 
-/* line 450, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 458, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 .mandalacreate a {
   color: #17819f; }
 
-/* line 456, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 464, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 .multicircles a {
   color: #8ea717; }
 
-/* line 465, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 473, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 footer {
   display: none;
   background-color: #ecececff;
   z-index: 10; }
 
-/* line 472, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 480, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 #footer-grid {
   display: grid;
   justify-items: center;
@@ -404,29 +412,29 @@ footer {
   width: 60%;
   margin: auto;
   padding: 2vh 0px; }
-  /* line 479, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 487, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   #footer-grid div {
     display: flex;
     flex-direction: column; }
-  /* line 484, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 492, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   #footer-grid h2 {
     color: #484848ff; }
-  /* line 488, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 496, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   #footer-grid a {
     text-decoration: none;
     color: #484848ff; }
-  /* line 492, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 500, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   #footer-grid a:hover {
     opacity: 0.5; }
 
-/* line 497, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 505, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 #footer-line {
   width: 150px;
   height: 2px;
   margin-top: 7px;
   background-color: #484848ff; }
 
-/* line 504, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 512, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 #logo-stempel {
   position: absolute;
   right: 30px;
