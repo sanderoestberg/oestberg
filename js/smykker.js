@@ -9,7 +9,7 @@ function showLoader(show) {
   
   
 
-    // fetch all genres / categories from WP
+    // fetch all genres/ categories from WP
 function getGenres() {
   fetch('http://oskarwiegaard.dk/wp/wp-json/wp/v2/categories?parent=12')
     .then(function(response) {
@@ -89,7 +89,7 @@ function appendSmykkerByGenre(smykkerByGenre) {
 
   
   let smykker = [];
-  // Her opretter vi et tomt array med navnet "smykkes".
+  // Her opretter vi et tomt array med navnet "smykker".
   // Så initiere vi functionen "get smykkes" hvor vi fetcher alt data om vores recipies som Json data fra vores opskriftdatabase på wordpress.
   // json og javascript kan frit konverteres frem og tilbage.
   // Når fetch er færdiggjort afslutter vores spinner.
