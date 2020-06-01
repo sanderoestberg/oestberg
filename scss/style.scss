@@ -47,7 +47,6 @@ html{
 
 
 /* LOADER / SPINNER */
-/* ---------- loader styling ---------- */
 #loader {
     position: fixed;
     left: 0px;
@@ -96,6 +95,126 @@ html{
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s 0.4s, opacity 0.4s linear;
+  }
+
+
+/* ----- Burger menu -------- */
+
+#burgerbar {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    background: $text-color;
+    width: 230px;
+    height: 100%;
+    transition: 0.4s;
+    @extend %shadow;
+    z-index: 10000;
+
+    ul {
+        margin: 0;
+        padding: 40px 0;
+      }
+      
+      ul li {
+        list-style: none;
+      }
+      
+      ul li a {
+        padding: 10px 20px;
+        color: white;
+        font-weight: bold;
+        display: block;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(0, 0, 0, .2);
+      }
+  }
+  
+  .active {
+    right: 0 !important;
+  }
+  
+  
+  // her laver vi den fysiske burgerknap
+  
+  #burger-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: transparent;
+    z-index: 10001;
+  }
+  
+  #burger-btn span {
+    display: block;
+    width: 35px;
+    height: 3px;
+    background: #252525;
+    position: absolute;
+    transition: 0.4s;
+    border-radius: 3px;
+  }
+  // Her koder vi så burgeren bliver til et kryds
+  // til at lukke for menuen igen.
+  // dette gør vi ved at animere vores Span elementer
+  // vi har 4 streger i alt. 2 ovenpå hinanden
+  // de to ydre strejer forsvinder med opacity 0 transition
+  // krydset kommer af det 2 streger i midten roterer.
+  // lidt unødvendigt. Men den er bestemt tilfredsstillende at anvende.
+  
+  #burger-btn span:nth-child(1) {
+    top: 10px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+  }
+  
+  #burger-btn span:nth-child(2) {
+    top: 20px;
+  }
+  
+  #burger-btn span:nth-child(3) {
+    top: 20px;
+  }
+  
+  #burger-btn span:nth-child(4) {
+    top: 30px;
+    -webkit-transform-origin: right center;
+    -moz-transform-origin: right center;
+    -o-transform-origin: right center;
+    transform-origin: right center;
+  }
+  
+  #burger-btn.open span:nth-child(1) {
+    opacity: 0;
+    background: white;
+  }
+  
+  #burger-btn.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background: white;
+  }
+  
+  #burger-btn.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    background: white;
+  }
+  
+  #burger-btn.open span:nth-child(4) {
+    opacity: 0;
+    background: white;
   }
 
 
@@ -541,7 +660,19 @@ margin-top: -50px;
 
 /*  Responsiv */
 
+@media only screen and (min-width: 770px) {
+    #burger-btn,
+    #burgerbar {
+      display: none;
+    }
+}
+
 @media screen and (max-width: 770px){
+
+.navbar{
+    display: none;
+}
+// smykker
     .smykkerouterbox{
         flex-direction: column;
         justify-content: center;
@@ -569,7 +700,7 @@ margin-top: -50px;
   display: none;
     }
 
-
+// footer
     #footer-grid{
         grid-template-columns: repeat(1, minmax(0, 1fr));
         grid-row-gap: 5%;
@@ -593,4 +724,12 @@ margin-top: -50px;
         footer{
             padding-bottom: 100px;
         }
-}
+    }
+    // forside
+
+    header{
+
+        p{
+            margin-top: 20px;
+        }
+    }

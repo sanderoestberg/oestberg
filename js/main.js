@@ -21,3 +21,10 @@ window.pageChange = function () {
     _spaService.pageChange();
    
 }
+window.bigMac = function() {
+   let bar = document.getElementById("burgerbar");
+    bar.classList.toggle("active");
+
+    let btn = document.getElementById("burger-btn")
+    btn.classList.toggle("open")
+  }
