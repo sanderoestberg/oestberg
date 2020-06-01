@@ -136,15 +136,25 @@ margin: 40px 0;
 }
 
 .smykkemenu{
+    display: none;
+    position: fixed;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 20%;
-    
+    height: 50vh;
     background-image: url(../images/smykkemenu.png);
+    background-size: cover;
     background-repeat: no-repeat;
+    right: 0;
+    top: 20vh;
+    a{
+        color: white;
+        text-decoration: none;
+    }
+
 
     h4{
         font-size: 23px;
@@ -469,7 +479,15 @@ margin: auto;
     }
 }
 
-
+#mette-silhuet-bottom-left{
+position: fixed;
+left: 0;
+}
+#mette-silhuet-bottom-right{
+position: fixed;
+ right: 0;
+ z-index: -10;
+}
 
 ///----------------------FOOTER-------------------///
 
