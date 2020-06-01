@@ -29,20 +29,15 @@ function appendGenres(genres) {
   let htmlTemplate = "";
   for (let genre of genres) {
     htmlTemplate += `
-    <a id="menu-punkter" href="#smykke-oversigt"><li onclick="genreSelected('${genre.id}', this)">- ${genre.name}</li></a>
+    <a id="${genre.id}" href="#smykke-oversigt"><li onclick="genreSelected('${genre.id}', this)">- ${genre.name}</li></a>
     `;
   }
 
-  document.querySelector('#smykke-menu-items').innerHTML += htmlTemplate;
+  document.querySelector('#smykke-menu-items').innerHTML = htmlTemplate;
 }
 
-
-function genreSelected(genreId, element) {
-  let menupunkter = document.querySelector('#menu-punkter')
-  element.classList.add('highlighted');
-  menupunkter.classList.remove('highlighted');
-  
-  
+function genreSelected(genreId, element){
+  selected(element);
   console.log(`Genre ID: ${genreId}`);
   if (genreId) {
     showLoader(true);
@@ -51,7 +46,6 @@ function genreSelected(genreId, element) {
         return response.json();
       })
       .then(function(smykker) {
-        
         console.log(smykker);
         appendSmykkerByGenre(smykker);
         showLoader(false);
@@ -59,8 +53,21 @@ function genreSelected(genreId, element) {
   }
 }
 
+function selected(element){
+  let menuItems = document.querySelectorAll('#smykke-menu-items a li')
+  console.log(menuItems)
+  for (let menuItem of menuItems) {
+  console.log(menuItem.classList.contains("highlighted"))
+  if(menuItem.classList.contains("highlighted")){
+    menuItem.classList.remove("highlighted")
+  }
+  else{
+    element.classList.add('highlighted')}
+}
+}
 
 function appendSmykkerByGenre(smykkerByGenre) {
+  
   let htmlTemplate = "";
   let clearGrids = `
   <div class="clear1"></div>
@@ -77,6 +84,7 @@ function appendSmykkerByGenre(smykkerByGenre) {
   }
 
   document.querySelector('.overview-grid-container').innerHTML = clearGrids + htmlTemplate;
+  
 }
 
   

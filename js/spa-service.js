@@ -20,17 +20,13 @@ export default class SpaService {
     this.hideAllPages();
     document.querySelector(`#${pageId}`).style.display = "block";
     this.setActiveTab(pageId);
-    if (pageId !== "forside"){
-    document.querySelector('footer').style.display = "block";
-  }
-  if (pageId.includes("smyk")){
-    document.querySelector('.smykkemenu').style.display = "flex";
-  }
-    else{
-      document.querySelector('footer').style.display = "none";
-      document.querySelector('.smykkemenu').style.display = "none";
-    }
     
+    if (pageId.includes("smyk")){
+      document.querySelector('.smykkemenu').style.display = "flex";
+  }
+  else{
+    document.querySelector('.smykkemenu').style.display = "none";
+  }
   }
 
   // adds a class to menu item

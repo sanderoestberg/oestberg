@@ -135,6 +135,7 @@ margin: 40px 0;
     width: 70%;
 }
 
+
 .smykkemenu{
     display: none;
     position: fixed;
@@ -297,8 +298,8 @@ header{
 #forside{
     width: 100%;
     height: 100vh;
-    position: fixed;
 }
+
 
 .forside-grid{
     display: grid;
@@ -492,7 +493,6 @@ position: fixed;
 ///----------------------FOOTER-------------------///
 
 footer{
-display: none;
 background-color: $footer;
 z-index: 10;
 @extend %footer-shadow;
