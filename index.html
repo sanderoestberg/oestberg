@@ -12,9 +12,9 @@
 <header>
   <p><span>Ø</span>stberg <span>D</span>esign</p>
     <ul class="navbar">
-        <a href="#forside" class="highlighted"><li>Forside</li></a>
+        <a href="#forside" class="highlighted" ><li>Forside</li></a>
         <li class="space-around">|</li>
-        <a href="#smykker"><li>Smykker</li></a>
+        <a href="#smykker" onclick="getGenres()"><li>Smykker</li></a>
         <li class="space-around">|</li>
         <a href="#metteoestberg"><li>Mette Østberg</li></a>
         <li class="space-around">|</li>
@@ -134,8 +134,8 @@
 
 
 <section id="smykke-oversigt" class="page">
-
-<h1 class="smykkeh1">Brocher</h1>
+<br>
+<h1 class="smykkeh1"></h1>
 
 <section class="outer-grid-container">
     <article class="left-grid">
@@ -278,14 +278,9 @@
     <a href="+4586220022">(+45) 86220022</a>
     <a href="mailto:mail@oestberg.dk">mail@oestberg.dk</a>
   </div>
-  <div>
+  <div >
     <h2>Smykker</h2>
-    <a href="#">Øresmykker</a>
-    <a href="#">Øreclips</a>
-    <a href="#">Halskæder</a>
-    <a href="#">Armbånd</a>
-    <a href="#">Ringe</a>
-    <a href="#">Brocher</a>
+    <div id="footer-smykke-items"></div>
   </div>
   <div>
     <h2>Links</h2>

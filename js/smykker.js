@@ -27,17 +27,21 @@ getGenres();
 // append all genres
 function appendGenres(genres) {
   let htmlTemplate = "";
+  let footerTemplate = "";
   for (let genre of genres) {
     htmlTemplate += `
-    <a id="${genre.id}" href="#smykke-oversigt"><li onclick="genreSelected('${genre.id}', this)">- ${genre.name}</li></a>
+    <a href="#smykke-oversigt"><li  onclick="genreSelected('${genre.id}'); selected('${genre.name}', this);">- ${genre.name}</li></a>
+    `;
+    footerTemplate += `
+    <a  href="#smykke-oversigt"><li onclick="genreSelected('${genre.id}')">${genre.name}</li></a>
     `;
   }
 
   document.querySelector('#smykke-menu-items').innerHTML = htmlTemplate;
+  document.querySelector('#footer-smykke-items').innerHTML = footerTemplate;
 }
 
-function genreSelected(genreId, element){
-  selected(element);
+function genreSelected(genreId){
   console.log(`Genre ID: ${genreId}`);
   if (genreId) {
     showLoader(true);
@@ -53,11 +57,15 @@ function genreSelected(genreId, element){
   }
 }
 
-function selected(element){
+function selected(genreName, element){
   let menuItems = document.querySelectorAll('#smykke-menu-items a li')
+  let smykkeOverskrift = document.querySelector('.smykkeh1')
+  console.log(genreName)
+  smykkeOverskrift.innerHTML = genreName
   console.log(menuItems)
+  console.log(element)
+
   for (let menuItem of menuItems) {
-  console.log(menuItem.classList.contains("highlighted"))
   if(menuItem.classList.contains("highlighted")){
     menuItem.classList.remove("highlighted")
   }
@@ -67,7 +75,6 @@ function selected(element){
 }
 
 function appendSmykkerByGenre(smykkerByGenre) {
-  
   let htmlTemplate = "";
   let clearGrids = `
   <div class="clear1"></div>
@@ -139,10 +146,11 @@ function appendSmykkerByGenre(smykkerByGenre) {
     let htmlTemplate = "";
   
       htmlTemplate += `
-
+          <div id="big-img-review">
           <img src="${bigimg}">
           <p>${info}</p>
           <h4>${pris} kr.</h4>
+          </div>
       `;
   
   

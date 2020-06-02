@@ -1,28 +1,3 @@
-/*
-export default class TitleLoop {
-    constructor(){
-        this.output = document.querySelector("#title-output")
-        this.display = s => this.output.innerText = s;
-        this.delayLoop = (fn, delay) => {
-            return (x, i) => {
-              setTimeout(() => {
-                fn(x);
-              }, i * delay);
-            };
-          };
-        this.titles = [
-            "ÆDELMETALFORMGIVER",
-            "KUNSTHÅNDVÆRKER",
-            "GULDSMED",
-            "PRODUKT DESIGNER"
-        ]
-    }
-    LoopTitles(){
-    this.titles.forEach(this.delayLoop(this.display, 1000));
-    }
-}
-
-*/
 
 export default class TitleLoop {
     constructor(){
