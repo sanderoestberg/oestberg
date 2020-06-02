@@ -679,155 +679,159 @@ footer {
     background-image: url();
     width: 100%;
     height: auto;
-    padding: 10px 5px; }
-    /* line 802, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
+    padding: 10px 5px;
+    top: 6vh; }
+    /* line 803, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
     .smykkemenu h4 {
       font-size: 1.4em; }
-    /* line 805, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
+    /* line 806, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
     .smykkemenu #smykke-menu-items {
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
       font-size: 1em; }
-      /* line 811, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
+      /* line 812, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
       .smykkemenu #smykke-menu-items li {
         margin: 0px 10px; }
-  /* line 819, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
+  /* line 820, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
   .outer-grid-container {
     display: grid;
-    grid-template-columns: 300px minmax(0, 1fr); } }
+    grid-template-columns: 300px minmax(0, 1fr); }
+  /* line 826, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
+  .smykkerouterbox {
+    margin-top: 10vh; } }
 
 @media screen and (max-width: 770px) {
-  /* line 827, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
+  /* line 832, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
   .navbar {
     display: none; }
-  /* line 833, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
+  /* line 838, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
   .smykkerouterbox {
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
-  /* line 841, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
+    align-items: center;
+    margin-top: 15vh; }
+  /* line 846, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
   .leftsmykkebox,
   .rightsmykkebox {
     width: 90%;
     margin: auto; }
-  /* line 847, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
+  /* line 852, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
   .leftsmykkebox {
     margin-top: 40px; }
-  /* line 851, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
+  /* line 856, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
   .smykkeimgsmall img {
     width: 30%; }
-  /* line 855, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
+  /* line 860, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
   .smykkeimgbig img {
     width: 80%;
     margin: 0; }
-  /* line 860, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
+  /* line 865, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
   .smykkemenu {
     background-color: #ecececff;
     background-image: url();
     width: 100%;
     height: auto;
-    padding: 5px 5px;
-    top: 6vh; }
-    /* line 868, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
+    padding: 5px 5px; }
+    /* line 873, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
     .smykkemenu h4 {
       font-size: 1.4em; }
-    /* line 872, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
+    /* line 877, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
     .smykkemenu #smykke-menu-items {
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
       font-size: 1em; }
-      /* line 878, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
+      /* line 883, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
       .smykkemenu #smykke-menu-items li {
         margin: 0px 10px; }
-  /* line 887, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
+  /* line 892, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
   #footer-grid {
     grid-template-columns: repeat(1, minmax(0, 1fr));
     grid-row-gap: 5%;
     text-align: start;
     width: 80%;
     padding: 30px; }
-    /* line 895, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
+    /* line 900, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
     #footer-grid div {
       display: flex;
       justify-content: center;
       align-items: center; }
-  /* line 902, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
+  /* line 907, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
   #logo-stempel {
     position: absolute;
     right: 40%;
     margin-top: 50px; }
-  /* line 908, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
+  /* line 913, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
   footer {
     padding-bottom: 100px; }
-  /* line 916, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
+  /* line 921, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
   header p {
     margin: 12px auto;
     font-size: 20px; }
-  /* line 924, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
+  /* line 929, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
   .kontakt-left,
   .kontakt-right {
     width: 90%; }
-    /* line 929, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
+    /* line 934, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
     .kontakt-left h2,
     .kontakt-right h2 {
       font-size: 19px; }
-    /* line 933, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
+    /* line 938, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
     .kontakt-left p,
     .kontakt-right p {
       font-size: 15px;
       margin: 0;
       width: 100%; }
-    /* line 939, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
+    /* line 944, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
     .kontakt-left ul,
     .kontakt-right ul {
       font-size: 16px; }
-    /* line 943, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
+    /* line 948, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
     .kontakt-left img,
     .kontakt-right img {
       width: 100%; }
-  /* line 949, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
+  /* line 954, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
   .kontaktsil,
   .kontaktleftsil {
     display: none; }
-  /* line 954, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
+  /* line 959, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
   .kontaktouterbox {
     flex-direction: column;
     justify-content: center;
     margin: 50px 0; }
-  /* line 960, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
+  /* line 965, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
   #kontakt {
     height: auto;
     margin: 60px 0; }
-  /* line 968, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
+  /* line 973, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
   #forside {
     min-height: 0;
     height: 94vh; }
-  /* line 973, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
+  /* line 978, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
   .forside-grid {
     margin-top: 50px;
     grid-template-columns: repeat(1, minmax(0, 1fr));
     grid-template-rows: 30vh;
     grid-gap: 0;
     justify-items: center; }
-  /* line 981, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
+  /* line 986, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
   .name-display {
     text-align: center; }
-    /* line 984, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
+    /* line 989, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
     .name-display p {
       font-size: 1.4em; }
-      /* line 987, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
+      /* line 992, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
       .name-display p span {
         font-size: 2em; }
-  /* line 993, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
+  /* line 998, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
   .first-title {
     margin-left: 0; }
-  /* line 1000, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
+  /* line 1005, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
   #metteoestberg {
     max-width: 90%;
     margin: auto; }
-  /* line 1005, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
+  /* line 1010, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
   .mette-outer-grid {
     width: 100%;
     margin-left: 0;
@@ -837,43 +841,43 @@ footer {
     grid-template-columns: repeat(1, minmax(0, 1fr));
     grid-gap: 10px;
     justify-content: center; }
-    /* line 1015, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
+    /* line 1020, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
     .mette-outer-grid p {
       font-size: 13px; }
-  /* line 1020, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
+  /* line 1025, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
   .first-title-mette {
     font-size: 0.5em !important; }
-  /* line 1024, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
+  /* line 1029, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
   .mette-name-display {
     width: 190px; }
-  /* line 1028, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
+  /* line 1033, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
   .mette-promo-smykke {
     align-items: center;
     height: 20vh; }
-  /* line 1033, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
+  /* line 1038, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
   .mandalacreate img,
   .multicircles img {
     width: 100%; } }
 
 @media screen and (max-width: 600px) {
-  /* line 1040, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
+  /* line 1045, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
   .overview-grid-container {
     justify-content: center; }
-  /* line 1043, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
+  /* line 1048, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
   .outer-grid-container {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr)); }
-  /* line 1049, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
+  /* line 1054, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
   #big-img-preview {
     position: relative; }
-  /* line 1054, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
+  /* line 1059, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
   .smykkeh1 {
     margin-top: 140px; }
-  /* line 1058, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
+  /* line 1063, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
   .left-grid {
     display: flex;
     justify-content: center; }
-    /* line 1061, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
+    /* line 1066, ../../../../../Documents/Frontend/oestberg/scss/style.scss */
     .left-grid img {
       width: 100%; } }
 
