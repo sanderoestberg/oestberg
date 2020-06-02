@@ -727,10 +727,59 @@ margin-top: -50px;
 
 @media only screen and (min-width: 770px) {
     #burger-btn,
-    #burgerbar,
-    .smykkemenu-mobile {
+    #burgerbar{
       display: none;
     }
+}
+
+@media screen and (max-width: 1300px){
+    .overview-grid-container{
+        display: grid;
+        grid-template-columns: repeat(4, 115px);
+        grid-template-rows: 115px;
+        grid-gap: 13px;
+        justify-content: flex-end;
+    }
+    .clear1, .clear2, .clear3, .clear4, .clear4end{
+        display: none;
+    }
+    .outer-grid-container{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr 20;
+        width: 100%;
+        grid-gap: 80px;
+        margin-top: 20px;
+        }
+
+}
+@media screen and (max-width: 1150px){
+    .overview-grid-container{
+        display: grid;
+        grid-template-columns: repeat(3, 115px);
+        grid-template-rows: 115px;
+        grid-gap: 13px;
+        justify-content: flex-end;
+    }
+    .clear1, .clear2, .clear3, .clear4, .clear4end{
+        display: none;
+    }
+
+
+}
+@media screen and (max-width: 935px){
+    .overview-grid-container{
+        display: grid;
+        grid-template-columns: repeat(2, 115px);
+        grid-template-rows: 115px;
+        grid-gap: 13px;
+        justify-content: flex-end;
+    }
+    .clear1, .clear2, .clear3, .clear4, .clear4end{
+        display: none;
+    }
+
+
 }
 
 @media screen and (max-width: 770px){
@@ -738,20 +787,15 @@ margin-top: -50px;
 .navbar{
     display: none;
 }
-
-header{
-    height: auto;
-}
 // smykker
 
-#smykker{
 
-}
+
     .smykkerouterbox{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 10vh;
+        margin-top: 16vh;
     }
 
 
@@ -776,8 +820,8 @@ header{
     background-image: url();
     width: 100%;
     height: auto;
-    padding: 5px 5px;
-    top: auto;
+    padding: 10px 5px;
+    top: 45px;
 
     h4{
         font-size: 1.4em;
@@ -795,6 +839,40 @@ header{
            
         }
     }
+
+
+    /* smykkegalleri */
+
+.overview-grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 115px);
+    grid-template-rows: 115px;
+    grid-gap: 13px;
+    justify-content: flex-end;
+
+img{
+    max-width: 115px;
+    max-height: 115px;
+    cursor: pointer;
+}
+}
+
+
+.clear1, .clear2, .clear3, .clear4, .clear4end{
+    display: none;
+}
+
+
+/* Ydre grid */
+.outer-grid-container{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 40% 50%;
+  width: 95%;
+  grid-gap: 5%;
+  margin-top: 20px;
+  margin: 0px 2.5%;
+  }
 
 // footer
     #footer-grid{
