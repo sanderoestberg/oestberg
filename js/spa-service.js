@@ -1,4 +1,4 @@
-//======== FÆLLES OPSÆTNING ========== //
+//======== SPA SERVICE ========== //
 
 export default class SpaService {
   constructor(defaultPage) {
@@ -8,7 +8,7 @@ export default class SpaService {
     this.pageChange();
   }
 
-  // hide all pages
+  // hides all pages
   hideAllPages() {
     for (let page of this.pages) {
       page.style.display = "none";
@@ -16,6 +16,8 @@ export default class SpaService {
   }
 
   // show page or tab
+  // Derudover er der et if og else statement, 
+  // som gør at smykkemenuen kun bliver vist på siderne: "#smykker" og "#smykke-oversigt"
   showPage(pageId) {
     this.hideAllPages();
     document.querySelector(`#${pageId}`).style.display = "block";
@@ -29,7 +31,7 @@ export default class SpaService {
   }
   }
 
-  // adds a class to menu item
+  // adds a class styling to menu item
   setActiveTab(pageId) {
     for (let navItem of this.navItems) {
       if (`#${pageId}` === navItem.getAttribute("href")) {

@@ -1,3 +1,7 @@
+// Showloader function til at show/hide loading icon.
+// showLoader(true) = så bliver den vist
+// showLoader(false) = loader bliver hidet
+
 function showLoader(show) {
     let loader = document.querySelector('#loader');
     if (show) {
@@ -9,7 +13,10 @@ function showLoader(show) {
   
   
 
-    // fetch all genres/ categories from WP
+ // Her fetcher vi alle genrene fra vores WordPress Headless CMS
+ // Vi henter alle kategorierne inden for parent-kategorien: smykker(id=12)
+ // Respone = Array(6): Armbånd, Broche, Halskæde, Ring, Øreclips, Øreringe
+ // Herefter kalder vi functionen appendGenres(categories), med arrayet som parameter.
 function getGenres() {
   fetch('http://oskarwiegaard.dk/wp/wp-json/wp/v2/categories?parent=12')
     .then(function(response) {
