@@ -668,6 +668,10 @@ margin-top: -50px;
 }
 
 /* -------- kontakt -------- */
+#kontakt{
+    height: 90%;
+}
+
 .kontaktouterbox{
     margin-top: 10vh;
     display: flex;
@@ -706,8 +710,8 @@ margin-top: -50px;
 .kontaktsil{
     position: absolute;
     left: 0;
-    bottom: -300px;
-    width: 50%;
+    bottom: 0;
+    width: 40%;
     z-index: -10;
 }
 
@@ -822,10 +826,43 @@ header{
     header{
 
         p{
-            margin-top: 20px;
+            margin: 0px auto;
+            font-size: 20px;
         }
     }
+    // kontakt
 
+    .kontakt-left, .kontakt-right{
+
+        width: 90%;
+        h2{
+            font-size: 19px;
+        }
+
+        p{
+            font-size: 15px;
+            margin: 0;
+            width: 100%;
+        }
+
+        ul{
+            font-size: 16px;
+        }
+
+        img{
+            width: 100%;
+        }
+
+    }
+
+    .kontaktsil, .kontaktleftsil{
+display: none;
+    }
+
+    .kontaktouterbox{
+        flex-direction: column;
+        justify-content: center;
+    margin-top: 10px;    }
 
 
 }
