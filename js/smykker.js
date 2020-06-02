@@ -33,7 +33,7 @@ function appendGenres(genres) {
     <a href="#smykke-oversigt"><li  onclick="genreSelected('${genre.id}'); selected('${genre.name}', this);">- ${genre.name}</li></a>
     `;
     footerTemplate += `
-    <a  href="#smykke-oversigt"><li onclick="genreSelected('${genre.id}')">${genre.name}</li></a>
+    <a  href="#smykke-oversigt"><li onclick="genreSelected('${genre.id}'); footerSelected('${genre.name}');">${genre.name}</li></a>
     `;
   }
 
@@ -55,6 +55,11 @@ function genreSelected(genreId){
         showLoader(false);
       });
   }
+}
+
+function footerSelected(genreName){
+  let smykkeOverskrift = document.querySelector('.smykkeh1')
+  smykkeOverskrift.innerHTML = genreName
 }
 
 function selected(genreName, element){
