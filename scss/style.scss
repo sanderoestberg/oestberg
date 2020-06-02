@@ -273,8 +273,9 @@ html {
     background-position: 50% 75%;
     right: 0;
     top: 15vh;
-
-    a {
+    z-index: 22;
+    
+    a{
         color: $text-color;
         text-decoration: none;
     }
@@ -295,11 +296,17 @@ html {
 
 /* smykkegalleri */
 
-.overview-grid-container {
+#smykke-oversigt{
+    max-width: 1920px;
+    margin: auto;
+}
+
+.overview-grid-container{
     display: grid;
     grid-template-columns: repeat(6, 115px);
     grid-template-rows: 115px;
     grid-gap: 13px;
+    justify-content: flex-end;
 
     img {
         max-width: 115px;
@@ -335,30 +342,37 @@ html {
 }
 
 /* Ydre grid */
-.outer-grid-container {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 20% 45% 20%;
-    width: 100%;
-    grid-gap: 80px;
-    margin-top: 20px;
+.outer-grid-container{
+
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 300px minmax(0, 1fr) 25%;
+  padding: 2.5%;
+  width: 100%;
+
+  grid-gap: 2.5%;
+  margin-top: 20px;
+  padding-bottom: 10vh;
+  }
+
+  .left-grid{
+      
+    
+      img{
+          width: 100%;
+          @extend %shadow;
+      }
+  }
+
+  .smykkeh1{
+font-size: 40px;
+margin-top: 100px;
+text-align: center;
 }
 
-.left-grid {
-    img {
-        width: 100%;
-        @extend %shadow;
-    }
-}
-
-.smykkeh1 {
-    font-size: 40px;
-    margin-top: 100px;
-    text-align: center;
-}
-
-#big-img-preview {
+#big-img-preview{
     position: fixed;
+    
 }
 
 /* SPA INDSTILLINGER */
@@ -758,27 +772,81 @@ footer {
 @media only screen and (min-width: 770px) {
 
     #burger-btn,
-    #burgerbar,
-    .smykkemenu-mobile {
-        display: none;
+    #burgerbar{
+      display: none;
     }
 }
 
-@media screen and (max-width: 770px) {
-
-    .navbar {
+@media screen and (max-width: 1600px){
+    .overview-grid-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    img{
+        margin: 6.5px;
+    }
+    }
+    .clear1, .clear2, .clear3, .clear4, .clear4end{
         display: none;
     }
+    .left-grid{
+        margin-top: 6.5px;
+      }
+}
 
-    // smykker
+@media screen and (max-width: 840px){
+    .smykkemenu{
+        background-color: $footer;
+        background-image: url();
+        width: 100%;
+        height: auto;
+        padding: 10px 5px;
+        top: 45px;
+    
+        h4{
+            font-size: 1.4em;
+        }
+            #smykke-menu-items{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            font-size: 1em;
+            
+                li{
+                    margin: 0px 10px;
+                    
+                }
+               
+            }
+        }
 
-    #smykker {}
 
-    .smykkerouterbox {
+/* Ydre grid */
+.outer-grid-container{
+    display: grid;
+    grid-template-columns: 300px minmax(0, 1fr);
+  
+  }
+
+  
+}
+
+
+
+@media screen and (max-width: 770px){
+
+.navbar{
+    display: none;
+}
+// smykker
+
+
+
+    .smykkerouterbox{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 10vh;
+        margin-top: 16vh;
     }
 
 
@@ -800,14 +868,13 @@ footer {
         width: 80%;
         margin: 0;
     }
-
-    .smykkemenu {
-        background-color: $footer;
-        background-image: url();
-        width: 100%;
-        height: auto;
-        padding: 5px 5px;
-        top: auto;
+    .smykkemenu{
+    background-color: $footer;
+    background-image: url();
+    width: 100%;
+    height: auto;
+    padding: 10px 5px;
+    top: 45px;
 
         h4 {
             font-size: 1.4em;
@@ -827,8 +894,11 @@ footer {
         }
     }
 
-    // footer
-    #footer-grid {
+
+
+
+// footer
+    #footer-grid{
         grid-template-columns: repeat(1, minmax(0, 1fr));
         grid-row-gap: 5%;
         text-align: start;
@@ -971,5 +1041,33 @@ footer {
 
     .mandalacreate img, .multicircles img{
         width: 100%;
+}
+}
+
+@media screen and (max-width: 600px){
+.overview-grid-container{
+    justify-content: center;
+}
+    .outer-grid-container{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+      
+      }
+
+      #big-img-preview{
+        position: relative
+        
+    }
+
+    .smykkeh1{
+      margin-top: 140px;  
+    }
+
+    .left-grid{
+        display: flex;
+        justify-content: center;
+        img{
+            width: 100%;
+        }
     }
 }
