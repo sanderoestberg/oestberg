@@ -146,7 +146,7 @@ function appendSmykkerByGenre(smykkerByGenre) {
     let htmlTemplate = "";
   
       htmlTemplate += `
-          <div id="big-img-review">
+          <div id="big-img-preview">
           <img src="${bigimg}">
           <p>${info}</p>
           <h4>${pris} kr.</h4>
