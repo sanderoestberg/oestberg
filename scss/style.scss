@@ -667,6 +667,56 @@ right: 30px;
 margin-top: -50px;
 }
 
+/* -------- kontakt -------- */
+.kontaktouterbox{
+    margin-top: 10vh;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.kontakt-left, .kontakt-right{
+    width: 40%;
+    margin: 5%;
+
+    ul{
+        list-style: none;
+        font-size: 20px;
+    }
+
+    h2{
+        margin-top: 30px;
+        margin-bottom: 5px;
+        font-size: 30px;
+    }
+
+    p{
+        width: 80%;
+        font-size: 20px;
+    }
+}
+
+
+.kontakt-right img{
+    width: 65%;
+}
+
+
+.kontaktsil{
+    position: absolute;
+    left: 0;
+    bottom: -300px;
+    width: 50%;
+    z-index: -10;
+}
+
+.kontaktleftsil img{
+    position: absolute;
+    right: -400px;
+    top: 0;
+    width: 40%;
+}
 
 
 /*  Responsiv */
