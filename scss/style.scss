@@ -223,6 +223,8 @@ html {
     width: 100%;
     flex-direction: row;
     margin-top: 50px;
+    img{
+    }
 }
 
 .leftsmykkebox,
@@ -260,7 +262,8 @@ html {
     display: none;
     position: fixed;
     color: $text-color;
-    justify-content: center;
+    justify-content: flex-end;
+    padding-bottom: 12vh;
     align-items: center;
     flex-direction: column;
     height: 60vh;
@@ -1065,4 +1068,5 @@ footer {
                 width: 100%;
             }
         }
+
     }
