@@ -29,9 +29,12 @@ function getGenres() {
     });
 }
 
+// Kalder functionen getGenres()
 getGenres();
 
-// append all genres
+// Ved hjælp af for-of loop kan vi append alle kategorierne (categories) og få tilføjet menupunkterne til smykkemenuen
+// Vi bruger backtick string får at append hver iteration til smykkemenuen og footeren i vores HTML
+// Hver menupunkt er et a-tag til #smykke-oversigt samt 2 onclick functioner: genreSelected('${genre.id}') og selected('${genre.name}/footerSelected('${genre.name}')
 function appendGenres(genres) {
   let htmlTemplate = "";
   let footerTemplate = "";
@@ -48,6 +51,10 @@ function appendGenres(genres) {
   document.querySelector('#footer-smykke-items').innerHTML = footerTemplate;
 }
 
+// Når brugeren klikker på en smykke-kategori bliver funktionen genreSelected(genreId) kaldt, 
+// med genre.id'et som parameter for den valgt kategori
+// Herefter fetcher vi alle posts inden for den valgte kategori ved hjælp af &categories=${genreId}
+// Til sidst bliver appendSmykkerByGenre(smykker) kaldt.
 function genreSelected(genreId){
   console.log(`Genre ID: ${genreId}`);
   if (genreId) {
@@ -64,11 +71,15 @@ function genreSelected(genreId){
   }
 }
 
-
+// Udover at genreSelected som onclick, har vi også disse to functioner: footerSelected(genreName) og selected(genreName, element)
+// footerSelected bruges til at append overskrift navnet til den valgt menu på smykke-oversigt siden.
 function footerSelected(genreName){
   let smykkeOverskrift = document.querySelector('.smykkeh1')
   smykkeOverskrift.innerHTML = genreName
 }
+// Ved functionen selected bliver overskriften til kategorien også appendet,
+// men derudover bliver der også tilføjet classen 'highlighted' som giver det valgte menupunkt en gul streg og tykkere skrift
+// for-of loopet er til for at fjerne classen highlight fra andre menupunkter når en ny kategori bliver valgt
 
 function selected(genreName, element){
   let menuItems = document.querySelectorAll('#smykke-menu-items a li')
@@ -87,6 +98,10 @@ function selected(genreName, element){
 }
 }
 
+// funktionen her bliver kaldt fra genreSelected(genreId) og bruges til at tilføje de posts der er i den valgte kategori
+// Det er igen med et for-of loop som tager alle posts fra den valgte kategori
+// Herudover har vi også 'clearGrids' som er en masse tomme div-elementer som skal bruges i griddet for at gøre nogle plads tommer, i forhold til vores design
+// Hver post består af et lille billede, med en onclick som kører appendSmykkerBig(), med alle de parametre vi skal bruge
 function appendSmykkerByGenre(smykkerByGenre) {
   let htmlTemplate = "";
   let clearGrids = `
@@ -107,7 +122,7 @@ function appendSmykkerByGenre(smykkerByGenre) {
   
 }
 
-
+// Bliver kaldt når brugeren klikker på det lille billede, og for herved vidst et større preview billede samt info-teskt og pris
   function appendSmykkerBig(bigimg, info, pris) {
     console.log(bigimg, info, pris);
     let htmlTemplate = "";
