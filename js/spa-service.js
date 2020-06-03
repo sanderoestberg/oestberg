@@ -18,10 +18,12 @@ export default class SpaService {
   // show page or tab
   // Derudover er der et if og else statement, 
   // som gør at smykkemenuen kun bliver vist på siderne: "#smykker" og "#smykke-oversigt"
+  // Ved side skift, scroll til toppen af siden
   showPage(pageId) {
     this.hideAllPages();
     document.querySelector(`#${pageId}`).style.display = "block";
     this.setActiveTab(pageId);
+    window.scrollTo(0, 0)
     
     if (pageId.includes("smyk")){
       document.querySelector('.smykkemenu').style.display = "flex";

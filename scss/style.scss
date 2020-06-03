@@ -223,6 +223,8 @@ html {
     width: 100%;
     flex-direction: row;
     margin-top: 50px;
+    img{
+    }
 }
 
 .leftsmykkebox,
@@ -260,7 +262,8 @@ html {
     display: none;
     position: fixed;
     color: $text-color;
-    justify-content: center;
+    justify-content: flex-end;
+    padding-bottom: 12vh;
     align-items: center;
     flex-direction: column;
     height: 60vh;
@@ -295,7 +298,6 @@ html {
 /* smykkegalleri */
 #smykke-oversigt{
     margin-top: 6vh;
-    height: 95vh;
     max-width: 1920px;
     margin: auto;
 }
@@ -363,10 +365,6 @@ html {
     font-size: 40px;
     margin-top: 100px;
     text-align: center;
-}
-
-#big-img-preview {
-    position: fixed;
 }
 
 /* SPA INDSTILLINGER */
@@ -1050,11 +1048,7 @@ footer {
           
           }
     
-          #big-img-preview{
-            position: relative
-            
-        }
-    
+        
         .smykkeh1{
           margin-top: 140px;  
         }
@@ -1066,4 +1060,5 @@ footer {
                 width: 100%;
             }
         }
+
     }
