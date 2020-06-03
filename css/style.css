@@ -245,50 +245,49 @@ html {
 /* line 296, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 #smykke-oversigt {
   margin-top: 6vh;
-  height: 95vh;
   max-width: 1920px;
   margin: auto; }
 
-/* line 303, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 302, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 .overview-grid-container {
   display: grid;
   grid-template-columns: repeat(6, 115px);
   grid-template-rows: 115px;
   grid-gap: 13px;
   justify-content: flex-end; }
-  /* line 310, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 309, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   .overview-grid-container img {
     max-width: 115px;
     max-height: 115px;
     cursor: pointer; }
 
-/* line 318, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 317, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 .clear1 {
   grid-column: 6;
   grid-row: 1; }
 
-/* line 323, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 322, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 .clear2 {
   grid-column: 1;
   grid-row: 2; }
 
-/* line 328, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 327, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 .clear3 {
   grid-column: 5 / 7;
   grid-row: 3; }
 
-/* line 333, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 332, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 .clear4 {
   grid-column: 1;
   grid-row: 4; }
 
-/* line 338, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 337, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 .clear4end {
   grid-column: 6;
   grid-row: 4; }
 
 /* Ydre grid */
-/* line 344, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 343, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 .outer-grid-container {
   display: grid;
   justify-content: center;
@@ -299,37 +298,37 @@ html {
   margin-top: 20px;
   padding-bottom: 10vh; }
 
-/* line 356, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 355, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 .left-grid img {
   width: 100%; }
 
-/* line 362, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 361, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 .smykkeh1 {
   font-size: 40px;
   margin-top: 100px;
   text-align: center; }
 
-/* line 368, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 367, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 #big-img-preview {
   position: fixed; }
 
 /* SPA INDSTILLINGER */
-/* line 373, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 372, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 .page {
   display: none;
   min-height: 100vh;
   animation: fadeIn 0.4s; }
-  /* line 378, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 377, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   .page h2 {
     color: #484848ff; }
 
-/* line 384, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 383, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 .highlighted {
   color: #000000ff;
   font-weight: 800;
   border-bottom: 3px solid #dbbb53ff; }
 
-/* line 391, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 390, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 header {
   width: 100%;
   position: fixed;
@@ -340,7 +339,7 @@ header {
   height: 6vh;
   background-color: #fafafaff;
   z-index: 100; }
-  /* line 402, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 401, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   header p {
     margin-left: 100px;
     text-transform: uppercase;
@@ -348,13 +347,13 @@ header {
     font-size: 2em;
     color: #484848ff;
     line-height: 100%; }
-    /* line 410, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+    /* line 409, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
     header p span {
       font-size: 1.2em; }
-  /* line 415, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 414, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   header .space-around {
     margin: 0px 15px; }
-  /* line 421, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 420, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   header ul {
     display: flex;
     /* width: 40%;
@@ -365,17 +364,17 @@ header {
     font-size: 1.2em;
     font-weight: 600;
     text-transform: uppercase; }
-    /* line 432, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+    /* line 431, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
     header ul a {
       text-decoration: none;
       color: #484848ff; }
 
-/* line 442, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 441, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 #forside {
   width: 100%;
   height: 100vh; }
 
-/* line 448, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 447, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 .forside-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -383,38 +382,38 @@ header {
   grid-gap: 5%;
   align-items: center;
   justify-items: flex-end; }
-  /* line 456, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 455, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   .forside-grid img {
     width: 100%; }
 
-/* line 462, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 461, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 .first-title {
   margin-left: 20px; }
 
-/* line 466, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 465, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 .name-display {
   text-align: center; }
-  /* line 469, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 468, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   .name-display p {
     font-size: 1.7em; }
-    /* line 472, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+    /* line 471, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
     .name-display p span {
       font-size: 2.3em;
       font-weight: 600;
       color: #484848ff;
       line-height: 100%; }
 
-/* line 481, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 480, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 #title-output {
   margin-top: 15px;
   animation: pulse 3s infinite; }
 
-/* line 486, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 485, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 .output-animation {
   margin-top: 15px;
   animation: pulse 3s infinite; }
 
-/* line 491, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 490, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 #title-output.enabled {
   color: red; }
 
@@ -426,37 +425,37 @@ header {
   100% {
     opacity: 0; } }
 
-/* line 509, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 508, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 #silhuet2 {
   width: 18%;
   position: absolute;
   left: 0px;
   bottom: 0px; }
 
-/* line 517, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 516, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 #texture {
   width: 1000px;
   -webkit-mask-image: url(../images/silhuet-form.svg);
   mask-image: url(../images/silhuet-form.svg); }
 
-/* line 529, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 528, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 #metteoestberg {
   max-width: 1400px;
   margin: auto; }
 
-/* line 536, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 535, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 .mette-outer-grid {
   display: grid;
   margin: 100px 100px;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-gap: 100px; }
 
-/* line 544, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 543, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 #title-output-mette {
   margin-top: 10px;
   animation: pulse 3s infinite; }
 
-/* line 550, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 549, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 #mette-silhuet {
   position: absolute;
   transform: rotate(-10deg);
@@ -464,136 +463,136 @@ header {
   z-index: -10;
   right: 50px; }
 
-/* line 558, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 557, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 .mette-name-display {
   margin-left: 30px;
   text-align: center; }
-  /* line 562, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 561, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   .mette-name-display p {
     font-size: 1.0em; }
-    /* line 565, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+    /* line 564, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
     .mette-name-display p span {
       font-size: 2.3em;
       font-weight: 600;
       color: #484848ff;
       line-height: 100%; }
 
-/* line 574, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 573, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 .foto-title {
   display: flex;
   align-items: center;
   height: 30vh; }
-  /* line 579, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 578, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   .foto-title img {
     width: 140px; }
 
-/* line 585, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 584, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 #uddannelse img {
   width: 100%; }
 
-/* line 590, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 589, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 .mette-promo-smykke {
   display: flex;
   justify-content: center;
   align-items: flex-end;
   height: 30vh; }
 
-/* line 598, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 597, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 .form-funktion img {
   width: 100%; }
 
-/* line 603, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 602, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 #mette-koncepter {
   text-align: center; }
 
-/* line 609, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 608, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 .mandalacreate img,
 .multicircles img {
   width: 80%; }
 
-/* line 613, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 612, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 .mandalacreate a,
 .multicircles a {
   text-decoration: none;
   font-size: 1.2em;
   font-weight: 600; }
 
-/* line 619, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 618, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 .mandalacreate a:hover,
 .multicircles a:hover {
   opacity: 0.5; }
 
-/* line 626, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 625, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 .mandalacreate a {
   color: #17819f; }
 
-/* line 632, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 631, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 .multicircles a {
   color: #8ea717; }
 
-/* line 637, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 636, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 #mette-silhuet-bottom-left {
   position: fixed;
   left: 0; }
 
-/* line 642, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 641, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 #mette-silhuet-bottom-right {
   position: fixed;
   right: 0;
   z-index: -10; }
 
-/* line 650, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 649, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 footer {
   background-color: #ecececff;
   z-index: 20;
   padding: 2vh 0px; }
 
-/* line 657, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 656, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 #footer-grid {
   display: grid;
   justify-items: center;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   width: 60%;
   margin: auto; }
-  /* line 664, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 663, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   #footer-grid div {
     display: flex;
     flex-direction: column; }
-  /* line 669, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 668, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   #footer-grid h2 {
     color: #484848ff; }
-  /* line 673, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 672, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   #footer-grid a {
     text-decoration: none;
     color: #484848ff; }
-  /* line 678, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 677, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   #footer-grid a:hover {
     opacity: 0.5; }
 
-/* line 683, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 682, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 #footer-smykke-items {
   list-style: none; }
 
-/* line 687, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 686, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 #footer-line {
   width: 150px;
   height: 2px;
   margin-top: 7px;
   background-color: #484848ff; }
 
-/* line 694, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 693, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 #logo-stempel {
   position: absolute;
   right: 30px;
   margin-top: -50px; }
 
 /* -------- kontakt -------- */
-/* line 701, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 700, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 #kontakt {
   min-height: 0;
   height: 90vh; }
 
-/* line 706, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 705, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 .kontaktouterbox {
   margin-top: 10vh;
   display: flex;
@@ -601,37 +600,37 @@ footer {
   justify-content: center;
   flex-direction: row; }
 
-/* line 714, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 713, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 .kontakt-left,
 .kontakt-right {
   width: 40%;
   margin: 2% 5% 0 5%; }
-  /* line 719, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 718, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   .kontakt-left ul,
   .kontakt-right ul {
     list-style: none;
     font-size: 20px; }
-  /* line 724, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 723, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   .kontakt-left h2,
   .kontakt-right h2 {
     margin-top: 0px;
     margin-bottom: 5px;
     font-size: 30px; }
-  /* line 730, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 729, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   .kontakt-left p,
   .kontakt-right p {
     width: 80%;
     font-size: 20px; }
 
-/* line 737, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 736, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 .kontakt-right h2 {
   margin-top: 25px; }
 
-/* line 743, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 742, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 .kontakt-right img {
   width: 65%; }
 
-/* line 748, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 747, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 .kontaktsil {
   position: absolute;
   left: 0;
@@ -639,7 +638,7 @@ footer {
   width: 40%;
   z-index: -10; }
 
-/* line 756, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+/* line 755, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
 .kontaktleftsil img {
   position: absolute;
   right: -400px;
@@ -648,29 +647,29 @@ footer {
 
 /*  Responsiv */
 @media only screen and (min-width: 770px) {
-  /* line 768, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 767, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   #burger-btn,
   #burgerbar {
     display: none; } }
 
 @media screen and (max-width: 1600px) {
-  /* line 775, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 774, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   .overview-grid-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end; }
-    /* line 779, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+    /* line 778, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
     .overview-grid-container img {
       margin: 6.5px; }
-  /* line 784, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 783, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   .clear1, .clear2, .clear3, .clear4, .clear4end {
     display: none; }
-  /* line 788, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 787, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   .left-grid {
     margin-top: 6.5px; } }
 
 @media screen and (max-width: 840px) {
-  /* line 795, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 794, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   .smykkemenu {
     background-color: #ecececff;
     background-image: url();
@@ -678,157 +677,157 @@ footer {
     height: auto;
     padding: 10px 5px;
     top: 6vh; }
-    /* line 802, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+    /* line 801, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
     .smykkemenu h4 {
       font-size: 1.4em; }
-    /* line 805, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+    /* line 804, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
     .smykkemenu #smykke-menu-items {
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
       font-size: 1em; }
-      /* line 811, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+      /* line 810, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
       .smykkemenu #smykke-menu-items li {
         margin: 0px 10px; }
-  /* line 819, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 818, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   .outer-grid-container {
     display: grid;
     grid-template-columns: 300px minmax(0, 1fr); }
-  /* line 825, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 824, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   .smykkerouterbox {
     margin-top: 10vh; } }
 
 @media screen and (max-width: 770px) {
-  /* line 831, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 830, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   .navbar {
     display: none; }
-  /* line 837, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 836, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   .smykkerouterbox {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 15vh; }
-  /* line 845, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 844, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   .leftsmykkebox,
   .rightsmykkebox {
     width: 90%;
     margin: auto; }
-  /* line 851, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 850, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   .leftsmykkebox {
     margin-top: 40px; }
-  /* line 855, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 854, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   .smykkeimgsmall img {
     width: 30%; }
-  /* line 859, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 858, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   .smykkeimgbig img {
     width: 80%;
     margin: 0; }
-  /* line 864, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 863, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   .smykkemenu {
     background-color: #ecececff;
     background-image: url();
     width: 100%;
     height: auto;
     padding: 5px 5px; }
-    /* line 872, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+    /* line 871, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
     .smykkemenu h4 {
       font-size: 1.4em; }
-    /* line 876, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+    /* line 875, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
     .smykkemenu #smykke-menu-items {
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
       font-size: 1em; }
-      /* line 882, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+      /* line 881, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
       .smykkemenu #smykke-menu-items li {
         margin: 0px 10px; }
-  /* line 891, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 890, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   #footer-grid {
     grid-template-columns: repeat(1, minmax(0, 1fr));
     grid-row-gap: 5%;
     text-align: start;
     width: 80%;
     padding: 30px; }
-    /* line 899, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+    /* line 898, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
     #footer-grid div {
       display: flex;
       justify-content: center;
       align-items: center; }
-  /* line 906, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 905, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   #logo-stempel {
     position: absolute;
     right: 40%;
     margin-top: 50px; }
-  /* line 912, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 911, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   footer {
     padding-bottom: 100px; }
-  /* line 920, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 919, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   header p {
     margin: 12px auto;
     font-size: 20px; }
-  /* line 928, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 927, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   .kontakt-left,
   .kontakt-right {
     width: 90%; }
-    /* line 933, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+    /* line 932, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
     .kontakt-left h2,
     .kontakt-right h2 {
       font-size: 19px; }
-    /* line 937, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+    /* line 936, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
     .kontakt-left p,
     .kontakt-right p {
       font-size: 15px;
       margin: 0;
       width: 100%; }
-    /* line 943, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+    /* line 942, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
     .kontakt-left ul,
     .kontakt-right ul {
       font-size: 16px; }
-    /* line 947, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+    /* line 946, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
     .kontakt-left img,
     .kontakt-right img {
       width: 100%; }
-  /* line 953, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 952, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   .kontaktsil,
   .kontaktleftsil {
     display: none; }
-  /* line 958, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 957, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   .kontaktouterbox {
     flex-direction: column;
     justify-content: center;
     margin: 50px 0; }
-  /* line 964, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 963, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   #kontakt {
     height: auto;
     margin: 60px 0; }
-  /* line 972, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 971, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   #forside {
     min-height: 0;
     height: 94vh; }
-  /* line 977, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 976, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   .forside-grid {
     margin-top: 50px;
     grid-template-columns: repeat(1, minmax(0, 1fr));
     grid-template-rows: 30vh;
     grid-gap: 0;
     justify-items: center; }
-  /* line 985, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 984, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   .name-display {
     text-align: center; }
-    /* line 988, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+    /* line 987, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
     .name-display p {
       font-size: 1.4em; }
-      /* line 991, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+      /* line 990, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
       .name-display p span {
         font-size: 2em; }
-  /* line 997, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 996, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   .first-title {
     margin-left: 0; }
-  /* line 1004, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 1003, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   #metteoestberg {
     max-width: 90%;
     margin: auto; }
-  /* line 1009, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 1008, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   .mette-outer-grid {
     width: 100%;
     margin-left: 0;
@@ -838,43 +837,43 @@ footer {
     grid-template-columns: repeat(1, minmax(0, 1fr));
     grid-gap: 10px;
     justify-content: center; }
-    /* line 1019, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+    /* line 1018, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
     .mette-outer-grid p {
       font-size: 13px; }
-  /* line 1024, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 1023, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   .first-title-mette {
     font-size: 0.5em !important; }
-  /* line 1028, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 1027, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   .mette-name-display {
     width: 190px; }
-  /* line 1032, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 1031, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   .mette-promo-smykke {
     align-items: center;
     height: 20vh; }
-  /* line 1037, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 1036, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   .mandalacreate img,
   .multicircles img {
     width: 100%; } }
 
 @media screen and (max-width: 600px) {
-  /* line 1044, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 1043, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   .overview-grid-container {
     justify-content: center; }
-  /* line 1047, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 1046, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   .outer-grid-container {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr)); }
-  /* line 1053, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 1052, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   #big-img-preview {
     position: relative; }
-  /* line 1058, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 1057, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   .smykkeh1 {
     margin-top: 140px; }
-  /* line 1062, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+  /* line 1061, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   .left-grid {
     display: flex;
     justify-content: center; }
-    /* line 1065, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
+    /* line 1064, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
     .left-grid img {
       width: 100%; } }
 
