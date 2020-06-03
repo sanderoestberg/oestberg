@@ -113,11 +113,11 @@ function appendSmykkerByGenre(smykkerByGenre) {
   `
   for (let smykke of smykkerByGenre) {
     htmlTemplate += `
-    
     <img src="${smykke.acf.smallimg}" onclick="appendSmykkerBig('${smykke.acf.bigimg}', '${smykke.acf.info}', '${smykke.acf.pris}')">
     `;
+    appendSmykkerBig(`${smykke.acf.bigimg}`, `${smykke.acf.info}`, `${smykke.acf.pris}`)
   }
-
+ 
   document.querySelector('.overview-grid-container').innerHTML = clearGrids + htmlTemplate;
   
 }
