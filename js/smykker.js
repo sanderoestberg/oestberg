@@ -1,6 +1,6 @@
 // Showloader function til at show/hide loading icon.
 // showLoader(true) = så bliver den vist
-// showLoader(false) = loader bliver hidet
+// showLoader(false) = loader bliver skjult
 
 function showLoader(show) {
     let loader = document.querySelector('#loader');
