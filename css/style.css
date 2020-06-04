@@ -350,7 +350,7 @@ header {
       font-size: 1.2em; }
     /* line 417, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
     header p a {
-      text-decoration: none !important;
+      text-decoration: none;
       color: #484848ff; }
   /* line 423, ../../../../../Documents/GitHub/oestberg/scss/style.scss */
   header .space-around {
