@@ -59,7 +59,7 @@ html {
 
 .spinner {
     width: 50px;
-    animation: coin-spin 2.4s  infinite;
+    animation: coin-spin 2.4s infinite;
     display: inline-block;
     vertical-align: middle;
     position: absolute;
@@ -72,19 +72,22 @@ html {
 
 
 @keyframes coin-spin {
-    0%, 100%{
-    
-    }
+
+    0%,
+    100% {}
+
     0% {
-      transform: rotateY(0deg);
+        transform: rotateY(0deg);
     }
+
     50% {
-      transform: rotateY(180deg);
+        transform: rotateY(180deg);
     }
+
     100% {
-      transform: rotateY(360deg);
+        transform: rotateY(360deg);
     }
-  }
+}
 
 
 /* ---------- HIDE ---------- */
@@ -223,8 +226,8 @@ html {
     width: 100%;
     flex-direction: row;
     margin-top: 50px;
-    img{
-    }
+
+    img {}
 }
 
 .leftsmykkebox,
@@ -297,7 +300,7 @@ html {
 }
 
 /* smykkegalleri */
-#smykke-oversigt{
+#smykke-oversigt {
     margin-top: 6vh;
     max-width: 1920px;
     margin: auto;
@@ -405,7 +408,7 @@ header {
         font-size: 2em;
         color: $text-color;
         line-height: 100%;
-  
+
 
         span {
             font-size: 1.2em;
@@ -776,61 +779,69 @@ footer {
     }
 }
 
-@media screen and (max-width: 1600px){
-    .overview-grid-container{
+@media screen and (max-width: 1600px) {
+    .overview-grid-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-end;
-        img{
+
+        img {
             margin: 6.5px;
         }
     }
 
-.clear1, .clear2, .clear3, .clear4, .clear4end{
-    display: none;
+    .clear1,
+    .clear2,
+    .clear3,
+    .clear4,
+    .clear4end {
+        display: none;
     }
 
-    .left-grid{
+    .left-grid {
         margin-top: 6.5px;
-      }
+    }
 
 }
 
-@media screen and (max-width: 840px){
-    .smykkemenu{
+@media screen and (max-width: 840px) {
+    .smykkemenu {
         background-color: $footer;
         background-image: url();
         width: 100%;
         height: auto;
         padding: 10px 5px;
         top: 6vh;
-        h4{
+
+        h4 {
             font-size: 1.4em;
         }
-            #smykke-menu-items{
+
+        #smykke-menu-items {
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
             font-size: 1em;
-            
-                li{
-                    margin: 0px 10px;
-                    
-                }
-               
+
+            li {
+                margin: 0px 10px;
+
             }
+
         }
-
-        .outer-grid-container{
-            display: grid;
-            grid-template-columns: 300px minmax(0, 1fr);
-          
-          }
-
-          .smykkerouterbox {
-            margin-top: 10vh;
-          }
     }
+
+    .outer-grid-container {
+        display: grid;
+        grid-template-columns: 300px minmax(0, 1fr);
+
+    }
+
+    .smykkerouterbox {
+        margin-top: 10vh;
+    }
+}
+
 @media screen and (max-width: 770px) {
 
     .navbar {
@@ -873,7 +884,7 @@ footer {
         width: 100%;
         height: auto;
         padding: 5px 5px;
-        
+
 
         h4 {
             font-size: 1.4em;
@@ -1007,12 +1018,12 @@ footer {
 
     // Mette Oestberg
 
-    #metteoestberg{
-       max-width: 90%;
+    #metteoestberg {
+        max-width: 90%;
         margin: auto;
     }
 
-    .mette-outer-grid{
+    .mette-outer-grid {
         width: 100%;
         margin-left: 0;
         margin-top: 10%;
@@ -1022,51 +1033,54 @@ footer {
         grid-gap: 10px;
         justify-content: center;
 
-        p{
+        p {
             font-size: 13px;
         }
     }
 
-    .first-title-mette{
+    .first-title-mette {
         font-size: 0.5em !important;
     }
 
-    .mette-name-display{
+    .mette-name-display {
         width: 190px;
     }
 
     .mette-promo-smykke {
-         align-items: center;
+        align-items: center;
         height: 20vh;
     }
 
-    .mandalacreate img, .multicircles img{
+    .mandalacreate img,
+    .multicircles img {
         width: 100%;
     }
 }
 
 
-@media screen and (max-width: 600px){
-    .overview-grid-container{
+@media screen and (max-width: 600px) {
+    .overview-grid-container {
         justify-content: center;
     }
-        .outer-grid-container{
-            display: grid;
-            grid-template-columns: repeat(1, minmax(0, 1fr));
-          
-          }
-    
-        
-        .smykkeh1{
-          margin-top: 140px;  
-        }
-    
-        .left-grid{
-            display: flex;
-            justify-content: center;
-            img{
-                width: 100%;
-            }
-        }
+
+    .outer-grid-container {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
 
     }
+
+
+    .smykkeh1 {
+        margin-top: 140px;
+    }
+
+    .left-grid {
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 100%;
+        }
+    }
+
+}

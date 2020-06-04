@@ -24,13 +24,12 @@ export default class SpaService {
     document.querySelector(`#${pageId}`).style.display = "block";
     this.setActiveTab(pageId);
     window.scrollTo(0, 0)
-    
-    if (pageId.includes("smyk")){
+
+    if (pageId.includes("smyk")) {
       document.querySelector('.smykkemenu').style.display = "flex";
-  }
-  else{
-    document.querySelector('.smykkemenu').style.display = "none";
-  }
+    } else {
+      document.querySelector('.smykkemenu').style.display = "none";
+    }
   }
 
   // adds a class styling to menu item

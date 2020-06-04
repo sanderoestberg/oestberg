@@ -1,56 +1,66 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.typekit.net/wxc8zyn.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/png" href="images/favicon.png"/>
-    <title>Østberg Design</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.typekit.net/wxc8zyn.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <title>Østberg Design</title>
 </head>
+
 <body onhashchange="pageChange()">
 
-<header>
-  <p><a href="#forside"><span>Ø</span>stberg <span>D</span>esign </a></p>
+  <header>
+    <p><a href="#forside"><span>Ø</span>stberg <span>D</span>esign </a></p>
     <ul class="navbar">
-        <a href="#forside" class="highlighted" ><li>Forside</li></a>
-        <li class="space-around">|</li>
-        <a href="#smykker" onclick="getGenres()"><li>Smykker</li></a>
-        <li class="space-around">|</li>
-        <a href="#metteoestberg"><li>Mette Østberg</li></a>
-        <li class="space-around">|</li>
-        <a href="#kontakt"><li>Kontakt</li></a>
+      <a href="#forside" class="highlighted">
+        <li>Forside</li>
+      </a>
+      <li class="space-around">|</li>
+      <a href="#smykker" onclick="getGenres()">
+        <li>Smykker</li>
+      </a>
+      <li class="space-around">|</li>
+      <a href="#metteoestberg">
+        <li>Mette Østberg</li>
+      </a>
+      <li class="space-around">|</li>
+      <a href="#kontakt">
+        <li>Kontakt</li>
+      </a>
     </ul>
 
   </header>
 
-<!-- navigation på mobil-->
-    <nav id="burgerbar">
-      <ul>
-        <li onclick="bigMac()"><a href="#forside">Forside</a></li>
-        <li onclick="bigMac()"><a href="#smykker" onclick="getGenres()">Smykker</a></li>
-        <li onclick="bigMac()"><a href="#metteoestberg">Mette Østberg</a></li>
-        <li onclick="bigMac()"><a href="#kontakt">Kontakt</a></li>
-      </ul>
-  
-    </nav>
-    <button id="burger-btn" onclick="bigMac()">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
+  <!-- navigation på mobil-->
+  <nav id="burgerbar">
+    <ul>
+      <li onclick="bigMac()"><a href="#forside">Forside</a></li>
+      <li onclick="bigMac()"><a href="#smykker" onclick="getGenres()">Smykker</a></li>
+      <li onclick="bigMac()"><a href="#metteoestberg">Mette Østberg</a></li>
+      <li onclick="bigMac()"><a href="#kontakt">Kontakt</a></li>
+    </ul>
+
+  </nav>
+  <button id="burger-btn" onclick="bigMac()">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 
 
 
-    <section class="page" id="forside">
-      <section class="forside-grid">
+  <section class="page" id="forside">
+    <section class="forside-grid">
       <article class="name-display">
-      <p class="first-title">DESIGNER | FORMGIVER</p>
-      <p><span>Mette Østberg</span></p>
-      <p id="title-output"></p>
-    </article>
-    <img src="images/forside-background-right.png" alt="Silhuet">
+        <p class="first-title">DESIGNER | FORMGIVER</p>
+        <p><span>Mette Østberg</span></p>
+        <p id="title-output"></p>
+      </article>
+      <img src="images/forside-background-right.png" alt="Silhuet">
     </section>
     <img id="silhuet2" src="images/forside-silhuet-left.png" alt="Silhuet">
   </section>
@@ -60,221 +70,232 @@
   <div class="smykkemenu">
     <h4>SE SMYKKER:</h4>
     <ul id="smykke-menu-items">
-      
-      
+
+
     </ul>
   </div>
 
-<section class="page" id="smykker">
-  <div class="smykkerouterbox">
+  <section class="page" id="smykker">
+    <div class="smykkerouterbox">
 
-    <div class="leftsmykkebox">
+      <div class="leftsmykkebox">
 
-      <div>
-        <h2>INSPIRATION:</h2>
-        <p>Det er selve opbygningen af smykket og materialerne, der giver mig inspirationen til det næste smykke. Derfor bliver mine smykker ofte skabt i små familier. 
-          Den ene dag arbejder jeg med kantede og geometriske former en anden dag med mere organiske former.
-          Men min inspiration udover selve materialerne har altid været frøskaller og struktur.
-        </p>
-      </div>
-
-      <div class="smykkeimgsmall">
-        <img src="images/diamant-ear.png" alt="smykke">
-        <img src="images/ring-diamant.png" alt="smykke">
-      </div>
-
-      <div>
-        <h2>FORM OG FUNTKION:</h2>
-        <p>Mange af mine ringe er lavet, så de følger fingrerenes skrå linje. Det gør at ringen ikke drejer og ringen kommer længere op på håndryggen at ligge, hvorved hånden syner slankere og mere elegant. <br>
- 
-          I min formgivning arbejder jeg med form, funktion og kombination. De trekantede ringe kan kombineres og bruges på forskellige måder. <br> <br>
-          RUMLIG OG ANDERLEDES: <br> 
-          Enkelt, let luftigt, 3-dimentionel, rumlig, at integrere selve låse funktionen i smykket, bruge metallets fjedrekraft og styrke er også noget der kendetegner min formgivning. <br> <br>
-           
-          Jeg kan lide at lege med tingene, tænke traditionelle smykker på en anderledes måde. Lade vedhænget kunne dreje rundt, have 2 forsider og ingen bagside eller lade ørehængerne komme ind bagfra, så selve ophænget bliver en del af smykket og ikke noget der skal skjules.
+        <div>
+          <h2>INSPIRATION:</h2>
+          <p>Det er selve opbygningen af smykket og materialerne, der giver mig inspirationen til det næste smykke.
+            Derfor bliver mine smykker ofte skabt i små familier.
+            Den ene dag arbejder jeg med kantede og geometriske former en anden dag med mere organiske former.
+            Men min inspiration udover selve materialerne har altid været frøskaller og struktur.
           </p>
+        </div>
+
+        <div class="smykkeimgsmall">
+          <img src="images/diamant-ear.png" alt="smykke">
+          <img src="images/ring-diamant.png" alt="smykke">
+        </div>
+
+        <div>
+          <h2>FORM OG FUNTKION:</h2>
+          <p>Mange af mine ringe er lavet, så de følger fingrerenes skrå linje. Det gør at ringen ikke drejer og ringen
+            kommer længere op på håndryggen at ligge, hvorved hånden syner slankere og mere elegant. <br>
+
+            I min formgivning arbejder jeg med form, funktion og kombination. De trekantede ringe kan kombineres og
+            bruges på forskellige måder. <br> <br>
+            RUMLIG OG ANDERLEDES: <br>
+            Enkelt, let luftigt, 3-dimentionel, rumlig, at integrere selve låse funktionen i smykket, bruge metallets
+            fjedrekraft og styrke er også noget der kendetegner min formgivning. <br> <br>
+
+            Jeg kan lide at lege med tingene, tænke traditionelle smykker på en anderledes måde. Lade vedhænget kunne
+            dreje rundt, have 2 forsider og ingen bagside eller lade ørehængerne komme ind bagfra, så selve ophænget
+            bliver en del af smykket og ikke noget der skal skjules.
+          </p>
+        </div>
+
       </div>
+
+
+      <div class="rightsmykkebox">
+
+        <div class="smykkeimgbig">
+          <img src="images/Organiske-former-armbaand.png" alt="smykke">
+        </div>
+
+        <div>
+          <h2>SALG:</h2>
+          <p>
+            Mine smykker sælges direkte fra mit firma uden mellemled, da det er unika smykker.
+            Jeg sælger igennem denne hjemmeside pr. mail og telefon, fra mit værksted efter aftale og fra nogle få
+            udstillinger. Ring eller skriv gerne og hør mere. <br> <br>
+
+
+            Kunsthåndværk: <br>
+            Mine smykker er kunsthåndværk, der er håndlavet. Jeg saver, lodder, filer og former metallet.
+            I min formgivning leger jeg med overflade struktur, sammensætning af forskellige materialer, en der skiller
+            sig ud eller sætter en perle eller diamant i kanten som “prikken over i’et”.
+          </p>
+        </div>
+
+        <div class="smykkeimgsmall">
+          <img src="images/perle-drejet.png" alt="Smykke">
+          <img src="images/struktur-broche.png" alt="Smykke">
+        </div>
+
+
+      </div>
+
+
 
     </div>
-
-
-    <div class="rightsmykkebox">
-
-      <div class="smykkeimgbig">
-        <img src="images/Organiske-former-armbaand.png" alt="smykke">
-      </div>
-
-      <div>
-        <h2>SALG:</h2>
-        <p>
-          Mine smykker sælges direkte fra mit firma uden mellemled, da det er unika smykker. 
-          Jeg sælger igennem denne hjemmeside pr. mail og telefon, fra mit værksted efter aftale og fra nogle få udstillinger. Ring eller skriv gerne og hør mere. <br> <br>
-           
-           
-          Kunsthåndværk: <br>
-          Mine smykker er kunsthåndværk, der er håndlavet. Jeg saver, lodder, filer og former metallet.
-          I min formgivning leger jeg med overflade struktur, sammensætning af forskellige materialer, en der skiller sig ud eller sætter en perle eller diamant i kanten som “prikken over i’et”. 
-          </p>
-      </div>
-
-      <div class="smykkeimgsmall">
-        <img src="images/perle-drejet.png" alt="Smykke">
-        <img src="images/struktur-broche.png" alt="Smykke">
-      </div>
-
-
-    </div>
-
-    
-    
-  </div>
   </section>
-</section>
+  </section>
 
 
 
 
-<section id="smykke-oversigt" class="page">
-<br>
-<h1 class="smykkeh1"></h1>
+  <section id="smykke-oversigt" class="page">
+    <br>
+    <h1 class="smykkeh1"></h1>
 
-<section class="outer-grid-container">
-    <article class="left-grid">
+    <section class="outer-grid-container">
+      <article class="left-grid">
+
+      </article>
+
+      <article class="overview-grid-container" class="pages">
+
+      </article>
+    </section>
+
+  </section>
+
+
+
+  <section id="metteoestberg" class="page">
+    <img id="mette-silhuet" src="images/silhuet2.png" alt="Silhuet">
+    <section class="mette-outer-grid">
+      <article class="mette-left-grid">
+        <div class="foto-title">
+          <img src="images/mette_oestberg.jpg" alt="Mette Østberg - Foto">
+          <article class="mette-name-display">
+            <p class="first-title" class="first-title-mette">DESIGNER | FORMGIVER</p>
+            <p><span>Mette Østberg</span></p>
+            <p id="title-output-mette"></p>
+          </article>
+        </div>
+        <div id="uddannelse">
+          <h2>UDDANNELSE:</h2>
+          <p>Jeg er uddannet guldsmed og ædelmetalformgiver, derefter har jeg taget en overbygning på Århus
+            Arkitektskole inden for industrielt design, samt møbel og rum</p>
+          <br>
+          <img src="images/Mette-Oestberg_Balance-fritlagt.png" alt="Stol">
+          <h2>DESIGNER / KUNSTHÅNDVÆRKER:</h2>
+          <p>Jeg arbejder både som kunsthåndværker med unikasmykker og som produktdesigner.
+            <br>
+            <br>
+            At arbejde kreativt med at skabe unikke smykker igennem mit gamle håndværk,
+            er en god kontrast til at arbejde med produktdesign.
+            Som kunsthåndværker er det en forholdsvis hurtig proces at komme fra ide til færdigt resultat.
+            <br>
+            <br>
+            Jeg kan lide at gennemarbejde produkter,
+            hvilket man kan se både i de multifunktionelle børnemøbler multicircles og tegnekonceptet Mandala Create.
+            Begge koncepter har jeg udviklet helt fra bunden, og fået sat i produktion.</p>
+        </div>
+      </article>
+      <article class="mette-right-grid">
+        <div class="mette-promo-smykke">
+          <img src="images/smykke-frit-100px.png" alt="smykke">
+        </div>
+        <div class="form-funktion">
+          <h2>FORM OG FUNKTION:</h2>
+          <p>Det gamle ord formgiver, er meget beskrivende for mit arbejde.
+            Jeg formgiver ud fra, form, funktion, kombination, overflader, brugervenlighed, enkelthed og æstetik.
+            <br>
+            <br>
+            Kroppens form, ergonomi, brugbarhed er vigtigt for mig om det er møbler,
+            smykker eller andet jeg designer. De fleste af mine ringe er lavet enten til venstre eller højre hånd,
+            så de følger fingrenes skrå linie og er derved meget behaglige at bruge.
+            <br>
+            <br>
+            På tværs af mine forskellige designområder er leg med funktion og kombination temaer,
+            der går igen. Liggestolen “BALANCE” er en hybrid imellem en gyngestol og en chaiselong.
+            <br>
+            <br>
+            De trekantede ring-sæt der består af 2 dele kan sidde på 8 forskellige måder på ringfingeren,
+            bruges enkeltvis eller kombineres med andre ringe.
+            <br>
+            <img src="images/4-Kombinatinsringe-t.png" alt="smykke">
+            <br>
+            Former, funktion og kombination er også gennemgående i designet af Multicircles og Mandala Create.</p>
+        </div>
+      </article>
+    </section>
+    <h2 id="mette-koncepter">KONCEPTER JEG STÅR BAG:</h2>
+    <section class="mette-outer-grid">
+      <article class="mandalacreate">
+        <h2>MANDALA CREATE</h2>
+        <p>Tegnekonceptet Mandala Create er et værktøj til selv at skabe fantastiske mønstre.
+          Det er kreativ leg med geometri for både børn og voksne.</p>
+        <br><a href="https://mandalacreate.dk/">mandalacreate.dk</a><br><br>
+        <img src="images/koncepter/Mandala-Create.png" alt="Mandala Create ramme+skabelon">
+      </article>
+      <article class="multicircles">
+        <h2>MULTICIRCLES</h2>
+        <p>Multicircles er multifunktionelle møbler designet til børn for at styrke dem motorisk og danne rum i rummet.
+        </p>
+        <br><br><a href="https://multicircles.dk/">multicircles.dk</a><br><br>
+        <img src="images/koncepter/multicirlces.png" alt="Multicircles - børnemøbler">
+      </article>
+    </section>
+    <article class="mette-bottom-silhuet">
+      <img id="mette-silhuet-bottom-left" src="images/mette-silhuet-bottom-left.png" alt="Silhuet">
+      <img id="mette-silhuet-bottom-right" src="images/mette-silhuet-bottom-right.png" alt="Silhuet">
+    </article>
+  </section>
+
+
+
+  <section class="page" id="kontakt">
+
+    <div class="kontaktleftsil">
+      <img src="images/kontaktleftsil.svg" alt="silhuet">
+    </div>
+    <article class="kontaktouterbox">
+
+      <div class="kontakt-left">
+        <h2>KOMMENDE UDSTILLINGER:</h2>
+        <p>
+          Desværre er det store årlige kunsthåndværkermarked på Vor Frue Plads i København 13.-15. august 2020 aflyst i
+          år p.g.a. Corona-virus.</p><br><br>
+        <h2>SALG:</h2>
+        <p>Mine smykker sælges direkte fra mit firma uden mellemled, da det er unika smykker.
+          Jeg sælger igennem denne hjemmeside pr. mail og telefon, fra mit værksted efter aftale og fra nogle få
+          udstillinger. Ring eller skriv gerne til mig for at høre mere. <br><br>Mette Østberg</p>
+
+
+        <div>
+          <img src="images/silhuet-form2.png" alt="smykke" class="kontaktsil">
+        </div>
+      </div>
+
+      <div class="kontakt-right">
+        <img src="images/kontor.png" alt="billede af studie">
+        <h2>STUDIO:</h2>
+        <p>Tegnestue og værksted <br>
+          Kringelvej 18. 8250 Egå <br> <br>
+          Her kan man se mine smykker efter aftale.</p>
+        <h2 class="kontakth2">KONTAKTOPLYSNINGER</h2>
+        <ul>
+          <li><b>Firma:</b> Østberg Design</li>
+          <li><b>Adresse:</b> Kringelvej 18, Egå 8250</li>
+          <li><b>Telefon:</b> (+45)86220022</li>
+          <li><b>Mail:</b> mail@oestberg.dk</li>
+          <li><b>CVR:</b> 31272874</li>
+        </ul>
+      </div>
 
     </article>
-
-    <article class="overview-grid-container" class="pages">
-      
-    </article>
-</section>
-
-</section>
-
-
-
-<section id="metteoestberg" class="page">
-<img id="mette-silhuet" src="images/silhuet2.png" alt="Silhuet">
-<section class="mette-outer-grid">
-<article class="mette-left-grid">
-<div class="foto-title">
-  <img src="images/mette_oestberg.jpg" alt="Mette Østberg - Foto">
-  <article class="mette-name-display">
-    <p class="first-title" class="first-title-mette">DESIGNER | FORMGIVER</p>
-    <p><span>Mette Østberg</span></p>
-    <p id="title-output-mette"></p>
-  </article>
-</div>
-<div id="uddannelse">
-  <h2>UDDANNELSE:</h2>
-  <p>Jeg er uddannet guldsmed og ædelmetalformgiver, derefter har jeg taget en overbygning på Århus
-    Arkitektskole inden for industrielt design, samt møbel og rum</p>
-    <br>
-  <img src="images/Mette-Oestberg_Balance-fritlagt.png" alt="Stol">
-  <h2>DESIGNER / KUNSTHÅNDVÆRKER:</h2>
-  <p>Jeg arbejder både som kunsthåndværker med unikasmykker og som produktdesigner.
-    <br>
-    <br>
-    At arbejde kreativt med at skabe unikke smykker igennem mit gamle håndværk, 
-    er en god kontrast til at arbejde med produktdesign. 
-    Som kunsthåndværker er det en forholdsvis hurtig proces at komme fra ide til færdigt resultat.
-    <br>
-    <br>
-    Jeg kan lide at gennemarbejde produkter, 
-    hvilket man kan se både i de multifunktionelle børnemøbler multicircles og tegnekonceptet Mandala Create. 
-    Begge koncepter har jeg udviklet helt fra bunden, og fået sat i produktion.</p>
-</div>
-</article>
-<article class="mette-right-grid">
-<div class="mette-promo-smykke">
-<img src="images/smykke-frit-100px.png" alt="smykke">
-</div>
-<div class="form-funktion">
-  <h2>FORM OG FUNKTION:</h2>
-  <p>Det gamle ord formgiver, er meget beskrivende for mit arbejde. 
-    Jeg formgiver ud fra, form, funktion, kombination, overflader, brugervenlighed, enkelthed og æstetik.
-  <br>
-  <br>
-    Kroppens form, ergonomi, brugbarhed er vigtigt for mig om det er møbler, 
-    smykker eller andet jeg designer. De fleste af mine ringe er lavet enten til venstre eller højre hånd, 
-    så de følger fingrenes skrå linie og er derved meget behaglige at bruge.
-    <br>
-    <br>
-    På tværs af mine forskellige designområder er leg med funktion og kombination temaer, 
-    der går igen. Liggestolen “BALANCE” er en hybrid imellem en gyngestol og en chaiselong.
-    <br>
-    <br>
-    De trekantede ring-sæt der består af 2 dele kan sidde på 8 forskellige måder på ringfingeren, 
-    bruges enkeltvis eller kombineres med andre ringe.
-    <br>
-    <img src="images/4-Kombinatinsringe-t.png" alt="smykke">
-    <br>
-    Former, funktion og kombination er også gennemgående i designet af Multicircles og Mandala Create.</p>
-</div>
-</article>
-</section>
-<h2 id="mette-koncepter">KONCEPTER JEG STÅR BAG:</h2>
-<section class="mette-outer-grid">
-  <article class="mandalacreate">
-    <h2>MANDALA CREATE</h2>
-    <p>Tegnekonceptet Mandala Create er et værktøj til selv at skabe fantastiske mønstre. 
-      Det er kreativ leg med geometri for både børn og voksne.</p>
-      <br><a href="https://mandalacreate.dk/">mandalacreate.dk</a><br><br>
-      <img src="images/koncepter/Mandala-Create.png" alt="Mandala Create ramme+skabelon">
-  </article>
-  <article class="multicircles">
-    <h2>MULTICIRCLES</h2>
-    <p>Multicircles er multifunktionelle møbler designet til børn for at styrke dem motorisk og danne rum i rummet.</p>
-    <br><br><a href="https://multicircles.dk/">multicircles.dk</a><br><br>
-    <img src="images/koncepter/multicirlces.png" alt="Multicircles - børnemøbler">
-  </article>
-</section>
-<article class="mette-bottom-silhuet">
-<img id="mette-silhuet-bottom-left" src="images/mette-silhuet-bottom-left.png" alt="Silhuet">
-<img id="mette-silhuet-bottom-right" src="images/mette-silhuet-bottom-right.png" alt="Silhuet">
-</article>
-</section>
-
-
-
-<section class="page" id="kontakt">
-
-  <div class="kontaktleftsil">
-    <img src="images/kontaktleftsil.svg" alt="silhuet">
-  </div>
-  <article class="kontaktouterbox">
-    
-<div class="kontakt-left">
-  <h2>KOMMENDE UDSTILLINGER:</h2>
-    <p>
-      Desværre er det store årlige kunsthåndværkermarked på Vor Frue Plads i København 13.-15. august 2020 aflyst i år p.g.a. Corona-virus.</p><br><br>
-  <h2>SALG:</h2>
-  <p>Mine smykker sælges direkte fra mit firma uden mellemled, da det er unika smykker.
-    Jeg sælger igennem denne hjemmeside pr. mail og telefon, fra mit værksted efter aftale og fra nogle få udstillinger. Ring eller skriv gerne til mig for at høre mere. <br><br>Mette Østberg</p>
-    
-
-       <div>
-         <img src="images/silhuet-form2.png" alt="smykke" class="kontaktsil">
-       </div>
-</div>
-
-<div class="kontakt-right">
-  <img src="images/kontor.png" alt="billede af studie">
-  <h2>STUDIO:</h2>
-  <p>Tegnestue og værksted <br>
-  Kringelvej 18. 8250 Egå <br> <br>
-Her kan man se mine smykker efter aftale.</p>
-  <h2 class="kontakth2">KONTAKTOPLYSNINGER</h2>
-<ul>
-  <li><b>Firma:</b> Østberg Design</li>
-  <li><b>Adresse:</b> Kringelvej 18, Egå 8250</li>
-  <li><b>Telefon:</b> (+45)86220022</li>
-  <li><b>Mail:</b> mail@oestberg.dk</li>
-  <li><b>CVR:</b> 31272874</li>
-</ul>
-</div>
-
-  </article>
-</section>
+  </section>
 
 
 
@@ -287,39 +308,42 @@ Her kan man se mine smykker efter aftale.</p>
 
 
 
-<footer id="footer">
+  <footer id="footer">
 
-  <section id="footer-grid">
-  <div>
-    <h2>Østberg Design</h2>
-    <p>Mette Østberg</p>
-    <p>Kringelvej 18</p>
-    <p>DK - 8250 Egå</p>
-    <a href="+4586220022">(+45) 86220022</a>
-    <a href="mailto:mail@oestberg.dk">mail@oestberg.dk</a>
-  </div>
-  <div >
-    <h2>Smykker</h2>
-    <div id="footer-smykke-items"></div>
-  </div>
-  <div>
-    <h2>Links</h2>
-    <a href="#forside"><p>Forside</p></a>
-    <a href="#smykker">Smykker</a>
-    <a href="#metteoestberg">Mette Østberg</a>
-    <a href="#kontakt">Kontakt</a>
-    <div id="footer-line"></div>
-    <a href="https://mandalacreate.dk/">mandalacreate.dk</a>
-    <a href="https://multicircles.dk/">multicircles.dk</a>
-  </div>
-</section>
-<img id="logo-stempel" src="images/oestberg-logo-stempel.png" alt="logo">
-</footer>
+    <section id="footer-grid">
+      <div>
+        <h2>Østberg Design</h2>
+        <p>Mette Østberg</p>
+        <p>Kringelvej 18</p>
+        <p>DK - 8250 Egå</p>
+        <a href="+4586220022">(+45) 86220022</a>
+        <a href="mailto:mail@oestberg.dk">mail@oestberg.dk</a>
+      </div>
+      <div>
+        <h2>Smykker</h2>
+        <div id="footer-smykke-items"></div>
+      </div>
+      <div>
+        <h2>Links</h2>
+        <a href="#forside">
+          <p>Forside</p>
+        </a>
+        <a href="#smykker">Smykker</a>
+        <a href="#metteoestberg">Mette Østberg</a>
+        <a href="#kontakt">Kontakt</a>
+        <div id="footer-line"></div>
+        <a href="https://mandalacreate.dk/">mandalacreate.dk</a>
+        <a href="https://multicircles.dk/">multicircles.dk</a>
+      </div>
+    </section>
+    <img id="logo-stempel" src="images/oestberg-logo-stempel.png" alt="logo">
+  </footer>
 
 
-<script src="js/smykker.js"></script>
-<script src="js/main.js" type="module"></script>
+  <script src="js/smykker.js"></script>
+  <script src="js/main.js" type="module"></script>
 
 
 </body>
+
 </html>

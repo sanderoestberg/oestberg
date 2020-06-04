@@ -10,11 +10,11 @@ let _spaService = new SpaService("forside");
 // Dette bliver brugt til title-loopet anvendt på både forsiden og metteøstberg siden
 // Det er en simpelt for loop med som kører 1000 gange før den stopper
 // Der er en setTimeout som kalder functionen LoopTitles() fra classen / title-loop.js, med et delay på 12000ms = 12 sek
-function infLoop(){
-    for (let n=0; n < 1000; n++) {
-        setTimeout( function timer(){
-    _titleLoop.LoopTitles();
-           }, n*12000); 
+function infLoop() {
+    for (let n = 0; n < 1000; n++) {
+        setTimeout(function timer() {
+            _titleLoop.LoopTitles();
+        }, n * 12000);
     }
 }
 // Kalder infLoop, når main.js bliver loadet
@@ -30,10 +30,10 @@ window.pageChange = function () {
 // bliver vist frem på siden.
 // samtidigt vil vores burger-btn toggle classen "open" der ændrer fra burger og til et kryds med animationer.
 
-window.bigMac = function() {
-   let bar = document.getElementById("burgerbar");
+window.bigMac = function () {
+    let bar = document.getElementById("burgerbar");
     bar.classList.toggle("active");
 
     let btn = document.getElementById("burger-btn")
     btn.classList.toggle("open")
-  }
+}
