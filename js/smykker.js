@@ -59,7 +59,7 @@ function genreSelected(genreId){
   console.log(`Genre ID: ${genreId}`);
   if (genreId) {
     showLoader(true);
-    fetch(`http://oskarwiegaard.dk/wp/wp-json/wp/v2/posts?_embed&categories=${genreId}`)
+    fetch(`http://oskarwiegaard.dk/wp/wp-json/wp/v2/posts?_embed&categories=${genreId}&per_page=100`)
       .then(function(response) {
         return response.json();
       })

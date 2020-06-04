@@ -247,10 +247,11 @@ html {
     margin: 40px 0;
 }
 
+
 .smykkeimgsmall img {
-    width: 20%;
+    max-width: 25%;
     height: auto;
-    margin: 0 20px;
+    margin: 0 30px;
 }
 
 .smykkeimgbig img {
@@ -404,9 +405,15 @@ header {
         font-size: 2em;
         color: $text-color;
         line-height: 100%;
+  
 
         span {
             font-size: 1.2em;
+        }
+
+        a {
+            text-decoration: none !important;
+            color: $text-color;
         }
     }
 
@@ -852,6 +859,7 @@ footer {
 
     .smykkeimgsmall img {
         width: 30%;
+
     }
 
     .smykkeimgbig img {
